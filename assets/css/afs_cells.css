@@ -1,0 +1,406 @@
+.afs-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 60px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .afs-hero-left {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .afs-hero-left h1 {
+    color: #0aaf3f;
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .afs-hero-left .subheading {
+    color: #0aaf3f;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .afs-hero-left h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .afs-hero-left p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #000000;
+    margin-bottom: 18px;
+  }
+  
+  /* รูปภาพด้านขวา */
+  .afs-hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .afs-hero-right img {
+    width: 90%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+
+/* SECTION: Product Info */
+.afs-product-info {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.product-info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.afs-product-info h2 {
+    color: #0aaf3f;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.afs-product-info .subheading {
+    color: #0aaf3f;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.product-info-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.product-info-item {
+    flex: 1;
+    max-width: 500px;
+}
+
+.product-info-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.product-info-item h4 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.product-info-item p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-info-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* SECTION: Benefits */
+.afs-benefits {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.afs-benefits h2 {
+    color: #0aaf3f;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.benefit-columns {
+    display: flex;
+    gap: 60px;
+}
+
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 80px; /* เพิ่มระยะห่างทั้งแนวนอนและแนวตั้ง */
+}
+
+.benefit-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.benefit-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 8px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+/* ซ้าย */
+.column:first-child .benefit-item img {
+    width: 200px;
+    height: 200px;
+}
+
+/* ขวา */
+.column:last-child .benefit-item img {
+    width: 150px;
+    height: 120px;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.benefit-item img {
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.benefit-text h4 {
+    color: #0aaf3f;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.benefit-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .benefit-columns {
+        flex-direction: column;
+    }
+    .column:first-child .benefit-item img,
+    .column:last-child .benefit-item img {
+        width: 100%;
+        height: auto;
+    }
+    .benefit-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* SECTION: Clinical */
+.afs-clinical {
+    padding: 60px 0;
+    background-color: #f4f5f2; /* สีเทาอ่อน */
+  }
+  
+  .clinical-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .header-with-button h2 {
+    font-size: 36px;
+    color: #0aaf3f;
+    font-weight: bold;
+    text-align: left;
+    flex: unset;
+  }
+  
+  .see-more-btn {
+    background-color: #0aaf3f;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    transition: background 0.3s;
+  }
+  
+  .see-more-btn:hover {
+    background-color: #088e34;
+  }
+  
+  /* จัดการ์ดให้เรียง 3 ใบ */
+  .clinical-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .clinical-card {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .clinical-card img {
+    width: 100%;
+    height: 420px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .clinical-card img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  }  
+  
+  .clinical-card h4 {
+    font-size: 14px;
+    color: #0aaf3f;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .clinical-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .clinical-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .header-with-button {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .header-with-button h2 {
+      text-align: center;
+    }
+  }
+  
+
+/* SECTION: How to */
+.afs-howto {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.afs-howto h2 {
+    color: #0aaf3f;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.afs-howto .subheading {
+    color: #0aaf3f;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.howto-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.howto-left {
+    flex: 1;
+}
+
+.howto-left h4 {
+    color: #0aaf3f;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.howto-left ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.howto-left ul li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+    list-style: none;
+    position: relative;
+}
+
+.howto-left ul li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #0aaf3f;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: 7px;
+}
+
+.howto-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.howto-right img {
+    width: 80%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 230px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .howto-wrapper {
+        flex-direction: column;
+    }
+    .howto-right img {
+        height: auto;
+    }
+}
+

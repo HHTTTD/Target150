@@ -1,0 +1,98 @@
+.hair-restoration-page {
+    padding: 80px 60px 40px 60px;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+}
+
+.hair-restoration-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Text Section */
+.text-block {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.text-block h1 {
+    color: #0aaf3f;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.text-block p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* Image Section */
+.image-block {
+    flex: 1;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-block img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hair-restoration-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-block {
+        padding-right: 0;
+    }
+
+    .image-block {
+        max-width: 100%;
+    }
+
+    .image-block img {
+        height: auto;
+    }
+}
+
+.customer-reviews {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.customer-reviews h2 {
+    color: #0aaf3f;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.reviews-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
