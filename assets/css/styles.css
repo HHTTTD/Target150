@@ -1108,7 +1108,7 @@ header {
   }
 
   .footer-logo img {
-    width: 220px; /* ✅ ปรับจาก 180px เป็น 220px */
+    width: 220px;
     margin: 0 auto 10px;
   }
 
