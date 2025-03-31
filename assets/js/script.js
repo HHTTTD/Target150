@@ -10,11 +10,37 @@ async function loadComponents() {
 
     document.getElementById('header').innerHTML = headerHTML;
     document.getElementById('footer').innerHTML = footerHTML;
+
+    // ✅ เรียกใช้ toggle หลัง header โหลดเสร็จแล้ว
+    setupMobileToggle();
 }
 
 loadComponents();
 
-// จัดการ Tabs & Cards
+// ✅ ฟังก์ชัน toggle สำหรับเมนูมือถือ
+function setupMobileToggle() {
+    const toggle = document.getElementById('mobile-toggle');
+    const menu = document.getElementById('mobile-nav');
+
+    if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    }
+
+    // ✅ จัดการเมนูย่อย (submenu toggle)
+    const submenuParents = document.querySelectorAll('.mobile-nav-menu .has-submenu > a');
+
+    submenuParents.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // ป้องกัน redirect
+            const parent = link.closest('.has-submenu');
+            parent.classList.toggle('open');
+        });
+    });
+}
+
+// ✅ จัดการ Tabs & Cards
 const tabs = document.querySelectorAll('.tab');
 const cardGroups = document.querySelectorAll('.card-group');
 
