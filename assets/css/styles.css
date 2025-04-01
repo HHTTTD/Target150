@@ -706,6 +706,96 @@ header {
 }
 
 
+/* ===== Contact Widget ===== */
+.contact-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+.toggle-btn {
+  background-color: #0aaf3f;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* กล่องแชท */
+.chat-popup {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  width: 280px;
+}
+
+/* ปุ่มปิด */
+.chat-popup .close-btn {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1001;
+}
+
+.chat-popup .close-btn:hover {
+  background: #d60000;
+}
+
+/* กล่องข้อความ */
+.chat-popup textarea {
+  resize: none;
+  height: 140px;
+  width: 250px;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  font-family: inherit;
+  background: #f9f9f9;
+  transition: border 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin: 0;
+  display: block;
+}
+
+/* ปุ่มส่ง */
+.send-btn {
+  background-color: #0aaf3f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px; /* 💡 ควบคุมระยะห่างเท่าที่จำเป็น */
+}
+
+.send-btn:hover {
+  background-color: #088c33;
+}
+
+
+
+
 .footer {
     background: #fff;
     padding: 50px;

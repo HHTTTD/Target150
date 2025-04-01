@@ -80,3 +80,50 @@ cardGroups.forEach(card => {
         if (matchingTab) matchingTab.classList.add('active');
     });
 });
+
+
+// โหลด contact widget หลังโหลด header/footer
+async function loadContactWidget() {
+    const res = await fetch('../components/contact_widget.html');
+    const widgetHTML = await res.text();
+    document.body.insertAdjacentHTML('beforeend', widgetHTML);
+    setupChatWidget(); // เรียกใช้หลังโหลดเสร็จ
+  }
+  
+  loadContactWidget();
+  
+  function setupChatWidget() {
+    const toggleBtn = document.getElementById('chat-toggle');
+    const popup = document.getElementById('chat-popup');
+    const sendBtn = document.getElementById('send-chat');
+    const messageInput = document.getElementById('chat-message');
+    const closeBtn = document.getElementById('chat-close');
+  
+    // เมื่อกดปุ่มเปิดแชท
+    toggleBtn.addEventListener('click', () => {
+      popup.style.display = 'flex';
+      toggleBtn.style.display = 'none'; // ซ่อนปุ่ม toggle
+    });
+  
+    // เมื่อกดปุ่มปิด (X)
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+      toggleBtn.style.display = 'inline-block'; // แสดงปุ่ม toggle กลับมา
+    });
+  
+    // เมื่อกดส่งข้อความ
+    sendBtn.addEventListener('click', () => {
+      const message = encodeURIComponent(messageInput.value.trim());
+      if (message) {
+        const phoneNumber = '66853772222'; // เบอร์ WhatsApp
+        const url = `https://wa.me/${phoneNumber}?text=${message}`;
+        window.open(url, '_blank');
+        messageInput.value = '';
+        popup.style.display = 'none';
+        toggleBtn.style.display = 'inline-block'; // แสดงปุ่ม toggle กลับมา
+      } else {
+        alert("กรุณากรอกข้อความก่อนส่ง");
+      }
+    });
+  }
+  
