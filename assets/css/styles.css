@@ -278,28 +278,6 @@ header {
   height: 200px; /* ล่าง */
 }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hero-about-container {
-      flex-direction: column;
-    }
-  
-    .hero-about-images {
-      flex-direction: column;
-    }
-  
-    .hero-about-left-img img {
-      height: 300px;
-    }
-  
-    .hero-about-right-img img {
-      height: 200px;
-    }
-
-    .footer-logo p {
-      display: none;
-    }
-  }
 
 /* Services Section */
 .services {
@@ -406,17 +384,6 @@ header {
   font-size: 13px;
   color: #8b8787;
   line-height: 1.6;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .service-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .service-header {
-    text-align: center;
-  }
 }
 
 
@@ -1266,3 +1233,53 @@ header {
     margin-bottom: 0;
   }
 }
+
+
+/* ===== Responsive index ===== */
+@media (max-width: 768px) {
+  .hero-about-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-about-text {
+    order: 1;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .hero-about-images {
+    order: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .hero-about-left-img img,
+  .hero-about-right-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .hero-about-right-img img:last-child {
+    grid-column: span 2;
+  }
+
+  /* ✅ ดึงปุ่มลงมาอยู่ใต้รูป */
+  .hero-about-text button {
+    order: 3;
+    margin-top: 20px;
+    align-self: center;
+    position: relative;
+    top: 0;
+  }
+}
+
+
