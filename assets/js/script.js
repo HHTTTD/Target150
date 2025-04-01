@@ -102,13 +102,13 @@ async function loadContactWidget() {
     // เมื่อกดปุ่มเปิดแชท
     toggleBtn.addEventListener('click', () => {
       popup.style.display = 'flex';
-      toggleBtn.style.display = 'none'; // ซ่อนปุ่ม toggle
+      toggleBtn.style.display = 'none';
     });
   
     // เมื่อกดปุ่มปิด (X)
     closeBtn.addEventListener('click', () => {
       popup.style.display = 'none';
-      toggleBtn.style.display = 'inline-block'; // แสดงปุ่ม toggle กลับมา
+      toggleBtn.style.display = 'inline-block';
     });
   
     // เมื่อกดส่งข้อความ
@@ -120,7 +120,7 @@ async function loadContactWidget() {
         window.open(url, '_blank');
         messageInput.value = '';
         popup.style.display = 'none';
-        toggleBtn.style.display = 'inline-block'; // แสดงปุ่ม toggle กลับมา
+        toggleBtn.style.display = 'inline-block';
       } else {
         alert("กรุณากรอกข้อความก่อนส่ง");
       }
