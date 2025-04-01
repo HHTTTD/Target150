@@ -81,49 +81,66 @@ cardGroups.forEach(card => {
     });
 });
 
-
 // โหลด contact widget หลังโหลด header/footer
 async function loadContactWidget() {
     const res = await fetch('../components/contact_widget.html');
     const widgetHTML = await res.text();
     document.body.insertAdjacentHTML('beforeend', widgetHTML);
     setupChatWidget(); // เรียกใช้หลังโหลดเสร็จ
-  }
-  
-  loadContactWidget();
-  
-  function setupChatWidget() {
+}
+loadContactWidget();
+
+function setupChatWidget() {
     const toggleBtn = document.getElementById('chat-toggle');
     const popup = document.getElementById('chat-popup');
     const sendBtn = document.getElementById('send-chat');
     const messageInput = document.getElementById('chat-message');
     const closeBtn = document.getElementById('chat-close');
-  
+
     // เมื่อกดปุ่มเปิดแชท
     toggleBtn.addEventListener('click', () => {
-      popup.style.display = 'flex';
-      toggleBtn.style.display = 'none';
+        popup.style.display = 'flex';
+        toggleBtn.style.display = 'none';
     });
-  
+
     // เมื่อกดปุ่มปิด (X)
     closeBtn.addEventListener('click', () => {
-      popup.style.display = 'none';
-      toggleBtn.style.display = 'inline-block';
-    });
-  
-    // เมื่อกดส่งข้อความ
-    sendBtn.addEventListener('click', () => {
-      const message = encodeURIComponent(messageInput.value.trim());
-      if (message) {
-        const phoneNumber = '66853772222'; // เบอร์ WhatsApp
-        const url = `https://wa.me/${phoneNumber}?text=${message}`;
-        window.open(url, '_blank');
-        messageInput.value = '';
         popup.style.display = 'none';
         toggleBtn.style.display = 'inline-block';
-      } else {
-        alert("กรุณากรอกข้อความก่อนส่ง");
-      }
     });
-  }
+
+    // เมื่อกดส่งข้อความ
+    sendBtn.addEventListener('click', () => {
+        const message = encodeURIComponent(messageInput.value.trim());
+        if (message) {
+            const phoneNumber = '66853772222'; // เบอร์ WhatsApp
+            const url = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.open(url, '_blank');
+            messageInput.value = '';
+            popup.style.display = 'none';
+            toggleBtn.style.display = 'inline-block';
+        } else {
+            alert("กรุณากรอกข้อความก่อนส่ง");
+        }
+    });
+}
+
+// ✅ รองรับปุ่ม About Us บนมือถือ
+document.addEventListener('click', function (e) {
+    // ตรวจสอบเฉพาะหน้าจอขนาดเล็ก (มือถือ)
+    if (window.innerWidth <= 768) {
+        // รองรับทั้งคลิกที่ปุ่มหรือ element ลูกในปุ่ม
+        const aboutBtn = e.target.closest('.about-btn');
+        if (aboutBtn) {
+            const target = aboutBtn.getAttribute('data-target');
+            if (target) {
+                window.location.href = target;
+            } else {
+                // fallback ถ้าไม่มี data-target ใช้ path นี้
+                window.location.href = 'pages/aboutus.html';
+            }
+        }
+    }
+});
+
   
