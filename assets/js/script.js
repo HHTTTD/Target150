@@ -85,20 +85,21 @@ async function loadComponents() {
   function setupChatWidget() {
     const toggleBtn = document.getElementById('chat-toggle');
     const popup = document.getElementById('chat-popup');
+    const iconPath = document.getElementById('toggle-icon-path');
     const sendBtn = document.getElementById('send-chat');
     const messageInput = document.getElementById('chat-message');
-    const closeBtn = document.getElementById('chat-close');
   
-    if (!toggleBtn || !popup || !sendBtn || !messageInput || !closeBtn) return;
+    if (!toggleBtn || !popup || !sendBtn || !messageInput || !iconPath) return;
+  
+    let isOpen = false;
+  
+    const iconChat = 'M2 3h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6l-4 4V4a1 1 0 0 1 1-1z';
+    const iconArrow = 'M7 10l5 5 5-5z';
   
     toggleBtn.addEventListener('click', () => {
-      popup.style.display = 'flex';
-      toggleBtn.style.display = 'none';
-    });
-  
-    closeBtn.addEventListener('click', () => {
-      popup.style.display = 'none';
-      toggleBtn.style.display = 'inline-block';
+      isOpen = !isOpen;
+      popup.style.display = isOpen ? 'flex' : 'none';
+      iconPath.setAttribute('d', isOpen ? iconArrow : iconChat);
     });
   
     sendBtn.addEventListener('click', () => {
@@ -109,12 +110,17 @@ async function loadComponents() {
         window.open(url, '_blank');
         messageInput.value = '';
         popup.style.display = 'none';
-        toggleBtn.style.display = 'inline-block';
+        iconPath.setAttribute('d', iconChat);
+        isOpen = false;
       } else {
         alert("กรุณากรอกข้อความก่อนส่ง");
       }
     });
   }
+  
+  // อย่าลืมเรียกหลัง DOM พร้อม
+  document.addEventListener('DOMContentLoaded', setupChatWidget);
+  
   
   // ✅ ปุ่ม About Us ในมือถือ
   document.addEventListener('click', function (e) {

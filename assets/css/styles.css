@@ -715,7 +715,6 @@ header {
   font-family: Arial, sans-serif;
 }
 
-/* ปุ่มเปิด-ปิด Widget */
 .toggle-btn {
   background-color: #0aaf3f;
   border: none;
@@ -739,44 +738,23 @@ header {
   width: 22px;
   height: 22px;
   fill: white;
+  transition: transform 0.3s ease;
 }
 
-/* กล่องแชท */
 .chat-popup {
   display: none;
   flex-direction: column;
-  position: relative;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
   background: white;
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   width: 280px;
-  margin-top: 10px;
-}
-
-/* ปุ่มปิด */
-.chat-popup .close-btn {
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  background: #ff4d4d;
-  color: white;
-  border: none;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
 
-.chat-popup .close-btn:hover {
-  background: #d60000;
-}
-
-/* กล่องข้อความ */
 .chat-popup textarea {
   resize: none;
   height: 130px;
@@ -787,13 +765,11 @@ header {
   font-size: 14px;
   background: #f9f9f9;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
-  transition: border 0.3s ease;
   outline: none;
   font-family: inherit;
   margin-bottom: 8px;
 }
 
-/* ปุ่มส่ง */
 .send-btn {
   background-color: #0aaf3f;
   color: white;
@@ -808,8 +784,6 @@ header {
 .send-btn:hover {
   background-color: #088c33;
 }
-
-
 
 
 

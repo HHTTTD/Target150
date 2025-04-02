@@ -1,12 +1,11 @@
 <div class="contact-widget">
   <button class="toggle-btn" id="chat-toggle">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
-      <path d="M2 3h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6l-4 4V4a1 1 0 0 1 1-1z"/>
+    <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
+      <path id="toggle-icon-path" d="M2 3h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6l-4 4V4a1 1 0 0 1 1-1z"/>
     </svg>
   </button>
 
   <div class="chat-popup" id="chat-popup">
-    <button class="close-btn" id="chat-close">&times;</button>
     <textarea id="chat-message" placeholder="พิมพ์ข้อความของคุณ..."></textarea>
     <button class="send-btn" id="send-chat">ส่งข้อความ</button>
   </div>
