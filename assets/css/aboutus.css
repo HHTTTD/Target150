@@ -181,13 +181,13 @@
   /* ปรับเฉพาะรูปให้โค้งเฉพาะมุมบน */
   .offer-card img {
     width: 100%;
-    height: 400px;
+    height: 410px;               /* ✅ ปรับให้เป็นภาพเล็ก (ความสูงน้อยลง) */
     object-fit: cover;
+    display: block;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
   }
+  
   
   
   /* Text outside card */
@@ -214,15 +214,31 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   
-  /* Responsive */
+
+
   @media (max-width: 768px) {
     .offer-wrapper {
-      flex-direction: column;
-      align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 20px;
+      padding: 20px 20px 20px 20px;
+      scroll-padding-left: 20px; 
     }
   
     .offer-item {
-      width: 90%;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+  
+    .offer-item:first-child {
+      margin-left: 0;
+    }
+  
+    .offer-item:last-child {
+      margin-right: 20px;
     }
   }
   
