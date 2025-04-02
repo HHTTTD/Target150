@@ -77,9 +77,31 @@
   .references li {
     margin-bottom: 8px;
   }
+
+  /* รูปแยกแสดงเฉพาะมือถือหรือเดสก์ท็อป */
+.mobile-img {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.desktop-img {
+  display: block;
+}
   
   /* Responsive */
   @media (max-width: 768px) {
+    .mobile-img {
+      display: block;
+    }
+  
+    .desktop-img {
+      display: none;
+    }
+  
     .nk-block {
       flex-direction: column;
     }
@@ -97,7 +119,6 @@
       height: auto;
       border-radius: 12px;
       object-fit: cover;
-      display: block;
       margin: 0 auto;
     }
   }
