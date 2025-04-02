@@ -94,7 +94,7 @@ async function loadComponents() {
     let isOpen = false;
   
     const iconChat = 'M2 3h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6l-4 4V4a1 1 0 0 1 1-1z';
-    const iconArrow = 'M7 10l5 5 5-5z';
+    const iconArrow = 'M6 9l6 6 6-6';
   
     toggleBtn.addEventListener('click', () => {
       isOpen = !isOpen;

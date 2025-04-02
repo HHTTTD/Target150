@@ -727,12 +727,24 @@ header {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .toggle-btn:hover {
   background-color: #088c33;
 }
+
+.toggle-btn:active {
+  transform: scale(0.92); /* ยุบเข้าเบาๆ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* ลดเงาให้เหมือนยุบ */
+  opacity: 0.85; /* จางลงเล็กน้อย */
+}
+
+.toggle-btn:active svg {
+  transform: rotate(360deg);
+  transition: transform 0.4s ease;
+}
+
 
 .toggle-btn svg {
   width: 22px;
