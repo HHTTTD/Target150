@@ -367,21 +367,48 @@
     color: #333;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .clinical-cards {
-      grid-template-columns: 1fr;
-    }
-  
-    .header-with-button {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .header-with-button h2 {
-      text-align: center;
-    }
+ /* Responsive */
+@media (max-width: 768px) {
+  .clinical-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 10px 20px 30px 20px;
+    scroll-padding-left: 20px;
   }
+
+  .clinical-card {
+    flex: 0 0 auto;
+    min-width: 260px;
+    scroll-snap-align: start;
+  }
+
+  .header-with-button {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-with-button h2 {
+    text-align: center;
+  }
+
+  .clinical-card img {
+    height: 400px;
+    width: 280px;
+  }
+
+  .clinical-card h4,
+  .clinical-card p {
+    max-width: 240px;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+
   
 
 /* SECTION: How to */
