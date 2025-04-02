@@ -411,3 +411,53 @@
     width: 48%;
   }
 }
+
+/* Why Choose Target150 Responsive */
+@media (max-width: 768px) {
+  .why-choose {
+    padding: 60px 0;
+  }
+
+  .why-choose h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .choose-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 0 0 10px 20px;
+    scroll-padding-left: 20px;
+    width: 100%;
+  }
+
+  .choose-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 260px;
+    max-width: 260px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .choose-card h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .choose-card p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .choose-card:last-child {
+    margin-right: 20px;
+  }
+}
