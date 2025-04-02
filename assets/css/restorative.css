@@ -54,22 +54,37 @@
     object-position: center top;
 }
 
+/* สำหรับรูปมือถือ */
+.mobile-img {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+
 /* Responsive */
 @media (max-width: 768px) {
     .restorative-content {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     .text-block {
-        padding-right: 0;
+      padding-right: 0;
     }
-
-    .image-block {
-        max-width: 100%;
+  
+    .image-block.desktop-only {
+      display: none;
     }
-
+  
+    .mobile-img {
+      display: block;
+    }
+  
     .image-block img {
-        height: auto;
+      height: auto;
     }
-}
+  }
