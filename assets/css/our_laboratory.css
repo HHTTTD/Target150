@@ -71,16 +71,45 @@
   .lab-col p {
     margin-bottom: 15px;
   }
+
+  /* ซ่อนไว้ก่อน */
+.img-mobile-only {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.img-desktop-only {
+  display: block;
+}
   
   /* Responsive */
   @media (max-width: 768px) {
-    .lab-images, .lab-columns {
+    .img-mobile-only {
+      display: block;
+    }
+  
+    .img-desktop-only {
+      display: none;
+    }
+  
+    .lab-images {
       flex-direction: column;
       align-items: center;
     }
   
+    .img-box {
+      width: 100%;
+      text-align: center;
+    }
+  
     .img-box img {
       max-width: 90%;
+      height: auto;
+      border-radius: 12px;
     }
   }
   
