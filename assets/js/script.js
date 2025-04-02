@@ -94,7 +94,7 @@ async function loadComponents() {
     let isOpen = false;
   
     const iconChat = 'M2 3h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6l-4 4V4a1 1 0 0 1 1-1z';
-    const iconArrow = 'M6 9l6 6 6-6';
+    const iconArrow = 'M4 7l8 10 8-10';
   
     toggleBtn.addEventListener('click', () => {
       isOpen = !isOpen;
@@ -113,7 +113,7 @@ async function loadComponents() {
         iconPath.setAttribute('d', iconChat);
         isOpen = false;
       } else {
-        alert("กรุณากรอกข้อความก่อนส่ง");
+        alert("Please fill in the message before sending.");
       }
     });
   }
