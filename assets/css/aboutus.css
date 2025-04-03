@@ -97,6 +97,7 @@
   @media (max-width: 768px) {
     .hero-about-container {
       flex-direction: column;
+      text-align: center;
     }
   
     .hero-about-images {
@@ -109,6 +110,36 @@
   
     .hero-about-right-img img {
       height: 200px;
+    }
+
+
+    .hero-about-text {
+      max-width: 100%;
+      text-align: left;
+    }
+
+    .hero-about-text h1 {
+     font-size: 32px;         /* เพิ่มขนาดตัวอักษร */
+     font-weight: bold;
+     display: flex;           /* วางไว้ในบรรทัดเดียว */
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: center;
+     gap: 6px;                /* ช่องว่างระหว่างคำ */
+     margin-bottom: 15px;
+    }
+  
+    .hero-about-text p {
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+  
+    .hero-about-text button {
+      display: block;
+      margin: 20px auto 0 auto;
+      font-size: 14px;
+      padding: 10px 20px;
     }
   }
 
@@ -347,13 +378,6 @@
 
   .hero-about-text {
     width: 100%;
-  }
-
-  .hero-about-text h1 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    white-space: nowrap; /* ✅ ไม่ให้ขึ้นบรรทัดใหม่ */
   }
 
   .hero-about-text h1 span {
