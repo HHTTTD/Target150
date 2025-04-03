@@ -25,7 +25,7 @@
   }
   
   .hero-about-text h1 span {
-    color: #0aaf3f;
+    color: #027F00;
   }
   
   .hero-about-text p {
@@ -36,7 +36,7 @@
   }
   
   .hero-about-text button {
-    background-color: #0aaf3f;
+    background-color: #027F00;
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -298,7 +298,7 @@
     font-size: 36px;
     margin-bottom: 50px;
     font-weight: bold;
-    color: #0aaf3f;
+    color: #027F00;
   }
   
   .why-choose h2 span {
@@ -345,7 +345,7 @@
 
   /* Our Mission Section */
 .our-mission {
-    background-color: #0aaf3f; /* เขียวเข้ม */
+    background-color: #027F00; /* เขียวเข้ม */
     padding: 80px 20px;
     text-align: center;
     color: #fff;
@@ -394,7 +394,7 @@
   }
 
   .hero-about-text h1 span {
-    color: #0aaf3f;
+    color: #027F00;
     font-weight: bold;
     display: inline; /* ✅ รวมกับบรรทัดก่อนหน้า */
   }
@@ -411,7 +411,7 @@
 
   .hero-about-text button {
     display: inline-block;
-    background: #0aaf3f;
+    background: #027F00;
     color: #fff;
     border: none;
     padding: 10px 20px;

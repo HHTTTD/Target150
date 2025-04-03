@@ -890,7 +890,7 @@ header {
 
 
 .footer {
-    background: #fff;
+    background: #edefea;
     padding: 50px;
     border-top: 1px solid #e0e0e0;
     position: relative;
@@ -1215,7 +1215,7 @@ header {
 @media (max-width: 768px) {
   .footer {
     padding: 30px 20px 0;
-    background: #fff;
+    background: #edefea;
   }
 
   .footer-content {
