@@ -94,21 +94,34 @@ loadContactWidget();
 function setupChatWidget() {
   const toggleBtn = document.getElementById('chat-toggle');
   const popup = document.getElementById('chat-popup');
-  const iconPath = document.getElementById('toggle-icon-path');
+  const chatIcon = document.getElementById('chat-icon-img');
+  const arrowIcon = document.getElementById('arrow-icon');
   const sendBtn = document.getElementById('send-chat');
   const messageInput = document.getElementById('chat-message');
 
-  if (!toggleBtn || !popup || !sendBtn || !messageInput || !iconPath) return;
+  if (!toggleBtn || !popup || !chatIcon || !arrowIcon || !sendBtn || !messageInput) return;
 
   let isOpen = false;
-
-  const iconChat = 'M2 3h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6l-4 4V4a1 1 0 0 1 1-1z';
-  const iconArrow = 'M4 7l8 10 8-10';
 
   toggleBtn.addEventListener('click', () => {
     isOpen = !isOpen;
     popup.style.display = isOpen ? 'flex' : 'none';
-    iconPath.setAttribute('d', isOpen ? iconArrow : iconChat);
+
+    if (isOpen) {
+      // แสดงลูกศร ซ่อน chat icon
+      chatIcon.classList.add('hidden');
+      arrowIcon.classList.remove('hidden');
+    } else {
+      // แสดง chat icon พร้อมหมุน
+      arrowIcon.classList.add('hidden');
+      chatIcon.classList.remove('hidden');
+      chatIcon.classList.add('rotate');
+
+      // ล้างเอฟเฟกต์หมุนหลังจบ animation
+      setTimeout(() => {
+        chatIcon.classList.remove('rotate');
+      }, 400);
+    }
   });
 
   sendBtn.addEventListener('click', () => {
@@ -119,7 +132,10 @@ function setupChatWidget() {
       window.open(url, '_blank');
       messageInput.value = '';
       popup.style.display = 'none';
-      iconPath.setAttribute('d', iconChat);
+
+      // รีเซ็ตเป็นไอคอนแชท
+      arrowIcon.classList.add('hidden');
+      chatIcon.classList.remove('hidden');
       isOpen = false;
     } else {
       alert("Please fill in the message before sending.");
@@ -127,8 +143,9 @@ function setupChatWidget() {
   });
 }
 
-// ✅ อย่าลืมเรียกหลัง DOM พร้อม
 document.addEventListener('DOMContentLoaded', setupChatWidget);
+
+
 
 // ✅ ปุ่ม About Us ในมือถือ
 document.addEventListener('click', function (e) {

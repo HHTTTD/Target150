@@ -1,8 +1,12 @@
 <div class="contact-widget">
   <button class="toggle-btn" id="chat-toggle">
-    <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
-      <path id="toggle-icon-path" d="M2 3h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6l-4 4V4a1 1 0 0 1 1-1z"/>
-    </svg>
+    <span id="icon-wrapper">
+      <!-- ใช้สองไอคอนซ้อนกัน -->
+      <img id="chat-icon-img" src="/assets/images/icon/contact_widget_icon.svg" width="50" height="50" alt="Chat Icon">
+      <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24" class="hidden">
+        <path d="M4 7l8 10 8-10"/>
+      </svg>
+    </span>
   </button>
 
   <div class="chat-popup" id="chat-popup">

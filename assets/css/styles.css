@@ -774,6 +774,14 @@ header {
   transition: transform 0.4s ease;
 }
 
+.rotate {
+  transform: rotate(360deg);
+  transition: transform 0.4s ease;
+}
+
+.hidden {
+  display: none;
+}
 
 .toggle-btn svg {
   width: 22px;
