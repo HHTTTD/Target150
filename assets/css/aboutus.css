@@ -248,7 +248,7 @@
 
 
   @media (max-width: 768px) {
-    /* 👉 แก้ Scroll สำหรับ What we offer */
+    /* ✅ What we offer */
     .offer-wrapper {
       display: flex;
       flex-wrap: nowrap;
@@ -256,35 +256,29 @@
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
       gap: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+
+    .offer-wrapper::-webkit-scrollbar {
+      display: none;
     }
   
     .offer-item {
-      flex: 0 0 auto;
-      min-width: 260px; /* ✅ ขนาดขั้นต่ำให้ scroll เห็นชัด */
+      flex: 0 0 85%;
       scroll-snap-align: start;
+      border-radius: 12px;
+      padding: 10px 0;
     }
   
-    /* 👉 แก้ Scroll สำหรับ Why Choose Target150 */
-    .choose-cards {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      gap: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
+    .offer-item:first-child {
+      margin-left: 20px;
     }
   
-    .choose-card {
-      flex: 0 0 auto;
-      min-width: 240px;
-      scroll-snap-align: start;
+    .offer-item:last-child {
+      margin-right: 20px;
     }
+  
   }
-  
   
 
   /* Why Choose Section */
@@ -474,14 +468,10 @@
   }
 
   .choose-card {
-    flex: 0 0 auto;
+    flex: 0 0 85%;
     scroll-snap-align: start;
-    width: 260px;
-    max-width: 260px;
-    padding: 20px;
     border-radius: 12px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 10px;
   }
 
   .choose-card h3 {
