@@ -38,38 +38,44 @@ async function loadComponents() {
   }
   
   // ✅ Tabs toggle
-  document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.tab');
-    const cardGroups = document.querySelectorAll('.card-group');
-  
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const targetId = tab.dataset.target;
-        const targetCard = document.getElementById(targetId);
-  
-        tabs.forEach(t => t.classList.remove('active'));
-        cardGroups.forEach(card => card.classList.remove('highlight'));
-  
-        tab.classList.add('active');
-        if (targetCard) {
-          targetCard.classList.add('highlight');
-          targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      });
-    });
-  
-    cardGroups.forEach(card => {
-      card.addEventListener('click', () => {
-        const id = card.getAttribute('id');
-        cardGroups.forEach(c => c.classList.remove('highlight'));
-        tabs.forEach(t => t.classList.remove('active'));
-  
-        card.classList.add('highlight');
-        const matchingTab = document.querySelector(`.tab[data-target="${id}"]`);
-        if (matchingTab) matchingTab.classList.add('active');
-      });
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.tab');
+  const cardGroups = document.querySelectorAll('.card-group');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.dataset.target;
+      const targetCard = document.getElementById(targetId);
+
+      tabs.forEach(t => t.classList.remove('active'));
+      cardGroups.forEach(card => card.classList.remove('highlight'));
+
+      tab.classList.add('active');
+      if (targetCard) {
+        targetCard.classList.add('highlight');
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     });
   });
+
+  cardGroups.forEach(card => {
+    card.addEventListener('click', () => {
+      const id = card.getAttribute('id');
+      cardGroups.forEach(c => c.classList.remove('highlight'));
+      tabs.forEach(t => t.classList.remove('active'));
+
+      card.classList.add('highlight');
+      const matchingTab = document.querySelector(`.tab[data-target="${id}"]`);
+      if (matchingTab) matchingTab.classList.add('active');
+    });
+  });
+
+  // ✅ Reset scroll position for horizontal sliders
+  const offerSlider = document.querySelector('.offer-wrapper');
+  const chooseSlider = document.querySelector('.choose-cards');
+  if (offerSlider) offerSlider.scrollTo({ left: 0, behavior: 'instant' });
+  if (chooseSlider) chooseSlider.scrollTo({ left: 0, behavior: 'instant' });
+});
   
   // ✅ โหลด contact widget
   async function loadContactWidget() {

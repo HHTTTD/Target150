@@ -248,6 +248,7 @@
 
 
   @media (max-width: 768px) {
+    /* 👉 แก้ Scroll สำหรับ What we offer */
     .offer-wrapper {
       display: flex;
       flex-wrap: nowrap;
@@ -255,23 +256,35 @@
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
       gap: 20px;
-      padding: 20px 20px 20px 20px;
-      scroll-padding-left: 20px; 
+      padding-left: 20px;
+      padding-right: 20px;
     }
   
     .offer-item {
       flex: 0 0 auto;
+      min-width: 260px; /* ✅ ขนาดขั้นต่ำให้ scroll เห็นชัด */
       scroll-snap-align: start;
     }
   
-    .offer-item:first-child {
-      margin-left: 0;
+    /* 👉 แก้ Scroll สำหรับ Why Choose Target150 */
+    .choose-cards {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   
-    .offer-item:last-child {
-      margin-right: 20px;
+    .choose-card {
+      flex: 0 0 auto;
+      min-width: 240px;
+      scroll-snap-align: start;
     }
   }
+  
   
 
   /* Why Choose Section */

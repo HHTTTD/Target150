@@ -70,7 +70,7 @@ header {
 }
 
 .logo-text span {
-    color: #0aaf3f;
+    color: #027F00;
     font-size: 10px;
     letter-spacing: 1px;
     margin-top: 2px;
@@ -164,16 +164,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0aaf3f;
+    color: #027F00;
     cursor: pointer;
     font-size: 14px;
 }
 
 .contact-outline {
     padding: 6px 14px;
-    background: #0aaf3f;
+    background: #027F00;
     color: #fff;
-    border: 1px solid #0aaf3f;
+    border: 1px solid #027F00;
     border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
@@ -182,7 +182,7 @@ header {
 
 .contact-outline:hover {
     background: #fff;
-    color: #0aaf3f;
+    color: #027F00;
 }
 
 /* Hero About Section */
@@ -212,7 +212,7 @@ header {
 }
 
 .hero-about-text h1 span {
-  color: #0aaf3f;
+  color: #027F00;
 }
 
 .hero-about-text p {
@@ -223,7 +223,7 @@ header {
 }
 
 .hero-about-text button {
-  background-color: #0aaf3f;
+  background-color: #027F00;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -354,7 +354,7 @@ header {
 }
 
 .btn-green {
-  background-color: #0aaf3f;
+  background-color: #027F00;
   color: #fff;
   padding: 10px 30px;
   border-radius: 30px;
@@ -374,7 +374,7 @@ header {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: #0aaf3f;
+  background-color: #027F00;
   padding: 10px 30px;
   border-radius: 30px;
   display: inline-block;
@@ -382,7 +382,7 @@ header {
 
 .service-header h2 {
   font-size: 36px;
-  color: #0aaf3f;
+  color: #027F00;
   font-weight: bold;
 }
 
@@ -463,14 +463,14 @@ header {
 
 .research h2 {
     font-size: 28px;
-    color: #0aaf3f;
+    color: #027F00;
 }
 
 .see-more {
     padding: 5px 14px;
-    background: #0aaf3f;
+    background: #027F00;
     color: #fff;
-    border: 1px solid #0aaf3f;
+    border: 1px solid #027F00;
     border-radius: 20px;
     cursor: pointer;
     font-size: 13px;
@@ -479,8 +479,8 @@ header {
   
   .see-more:hover {
     background: #fff;
-    color: #0aaf3f;
-    border: 1px solid #0aaf3f;
+    color: #027F00;
+    border: 1px solid #027F00;
   }
   
 
@@ -565,7 +565,7 @@ header {
 
   .clients h2 {
     font-size: 28px;
-    color: #0aaf3f;
+    color: #027F00;
     text-align: left;
     margin-left: 0;
     margin-bottom: 30px;
@@ -606,7 +606,7 @@ header {
   
   .client-stars {
     font-size: 16px;
-    color: #0aaf3f;
+    color: #027F00;
     margin-bottom: 10px;
   }
   
@@ -672,7 +672,7 @@ header {
   
 
 .cta-banner {
-    background: #0aaf3f;
+    background: #027F00;
     text-align: center;
     padding: 80px 20px;
     color: #fff;
@@ -725,7 +725,7 @@ header {
 
 .search-bar button:hover {
     background: #fff;
-    color: #0aaf3f;
+    color: #027F00;
 }
 
 .cta-banner p {
@@ -745,7 +745,7 @@ header {
 }
 
 .toggle-btn {
-  background-color: #0aaf3f;
+  background-color: #027F00;
   border: none;
   border-radius: 50%;
   width: 52px;
@@ -812,7 +812,7 @@ header {
 }
 
 .send-btn {
-  background-color: #0aaf3f;
+  background-color: #027F00;
   color: white;
   border: none;
   padding: 10px 0;
@@ -902,7 +902,7 @@ header {
 }
 
 .footer a:hover {
-    color: #0aaf3f; 
+    color: #027F00; 
 }
 
 /* สีพื้นหลังเทาอ่อน */
@@ -958,7 +958,7 @@ header {
   }
   
   .section-title.green {
-    color: #0aaf3f;
+    color: #027F00;
   }
   
   /* Research header */
@@ -971,13 +971,13 @@ header {
   
   .research-header h2 {
     font-size: 28px;
-    color: #0aaf3f;
+    color: #027F00;
   }
   
   .see-more {
     padding: 6px 18px;
     border: none;
-    background: #0aaf3f;
+    background: #027F00;
     color: #fff;
     border-radius: 20px;
     cursor: pointer;
@@ -1060,7 +1060,7 @@ header {
 
   .mobile-toggle span {
     height: 3px;
-    background: #0aaf3f;
+    background: #027F00;
     border-radius: 2px;
     width: 100%;
     transition: 0.3s;
@@ -1137,7 +1137,7 @@ header {
     display: none;
     padding-left: 15px;
     margin-top: 6px;
-    border-left: 2px solid #0aaf3f;
+    border-left: 2px solid #027F00;
     margin-left: 6px;
   }
 
@@ -1156,13 +1156,13 @@ header {
 
   /* ปุ่ม Contact Us ในเมนูมือถือ */
 .contact-mobile-btn {
-  background: #0aaf3f;
+  background: #027F00;
   color: #fff !important;
   padding: 6px 14px;
   border-radius: 30px;
   font-size: 14px;
   font-weight: bold;
-  border: 1px solid #0aaf3f;
+  border: 1px solid #027F00;
   cursor: pointer;
   display: inline-block;
   text-align: center;
@@ -1174,7 +1174,7 @@ header {
 
   .contact-mobile-btn:hover {
   background: #fff;
-  color: #0aaf3f !important;
+  color: #027F00 !important;
   }
 
    /* จัด li ให้อยู่ตรงกลาง */
@@ -1314,8 +1314,9 @@ header {
   }
 
 
+
   .hero-about-text h1 span {
-    color: #0aaf3f;
+    color: #027F00;
     font-weight: bold;
     display: inline; /* ✅ รวมกับบรรทัดก่อนหน้า */
   }
@@ -1332,7 +1333,7 @@ header {
 
   .hero-about-text button {
     display: inline-block;
-    background: #0aaf3f;
+    background: #027F00;
     color: #fff;
     border: none;
     padding: 10px 20px;

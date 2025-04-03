@@ -53,9 +53,9 @@
     transition: all 0.3s;
   }
   .tabs .tab.active {
-    background: #0aaf3f;
+    background: #027F00;
     color: #fff;
-    border-color: #0aaf3f;
+    border-color: #027F00;
   }
   
   /* ------------------------- Research Cards Section ------------------------- */
@@ -101,7 +101,7 @@
   }  
   
   .card-group.highlight .card-content {
-    border: 2px solid #0aaf3f;
+    border: 2px solid #027F00;
     background-color: #f4fff9;
     box-shadow: 0 0 12px rgba(10, 175, 63, 0.3);
   }
@@ -131,7 +131,7 @@
     line-height: 1.5;
   }
   .conclusion-text span {
-    color: #0aaf3f;
+    color: #027F00;
     font-weight: bold;
   }
   
@@ -183,7 +183,7 @@
     color: #8b8787;
   }
   .ref-column a {
-    color: #0aaf3f;
+    color: #027F00;
     text-decoration: underline;
   }
   

@@ -16,7 +16,7 @@
   /* Section Headings */
   .clinical-app h1 {
     text-align: center;
-    color: #0aaf3f;
+    color: #027F00;
     font-size: 36px;
     margin-bottom: 50px;
   }
@@ -24,7 +24,7 @@
   .section h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #0aaf3f;
+    color: #027F00;
     text-align: left;
   }
   
@@ -61,7 +61,7 @@
   }
   
   .text .item h4 {
-    color: #0aaf3f;
+    color: #027F00;
     margin-bottom: 5px;
     font-size: 16px;
   }
@@ -80,7 +80,7 @@
     margin-top: 50px;             /* เว้นจากข้อความด้านบน */
     margin-bottom: 50px;          /* เว้นจาก note ด้านล่าง */
     list-style-type: disc;        /* ใช้ bullet แบบวงกลม */
-    color: #0aaf3f;               /* สีของข้อความทั้งหมดใน list */
+    color: #027F00;               /* สีของข้อความทั้งหมดใน list */
     font-size: 15px;              /* ขนาดฟอนต์ */
     line-height: 1.7;             /* ระยะห่างระหว่างบรรทัด */
   }
@@ -91,7 +91,7 @@
   
   .benefits-list li strong {
     font-weight: 600;
-    color: #0aaf3f;
+    color: #027F00;
   }
   
   
