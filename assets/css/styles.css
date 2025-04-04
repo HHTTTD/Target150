@@ -1161,14 +1161,20 @@ header {
   }
 
   .mobile-nav-menu .arrow {
-    font-size: 12px;
-    margin-left: 10px;
-    transform: rotate(90deg);
-    transition: transform 0.3s ease;
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+    position: relative;
+    top: -3px;
+    left: 7px;
   }
 
   .mobile-nav-menu .has-submenu.open .arrow {
-    transform: rotate(-90deg);
+    transform: rotate(-135deg);
   }
 
   .mobile-nav-menu .submenu {
