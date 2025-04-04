@@ -191,6 +191,25 @@
   @media (max-width: 768px) {
     .research-cards {
       grid-template-columns: 1fr;
+      
+      .card-content {
+        background: #fff;
+        border-radius: 12px;
+        padding: 55px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        border: 1px solid transparent;
+        transition: 0.3s ease;
+        width: 100%;
+        max-width: 328px;
+        margin: 0 auto ;
+        
+      }
+
+      .card-group.highlight .card-content {
+        border: 2px solid #027F00;
+        background-color: #f4fff9;
+        box-shadow: 0 0 12px rgba(10, 175, 63, 0.3);
+    }
     }
   }
   
