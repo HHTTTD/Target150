@@ -1,3 +1,30 @@
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* ใช้ฟอนต์ปกติสำหรับหัวข้อ */
+h1, h2, h3 {
+  font-family: 'PlusJakartaSans', sans-serif;
+  font-style: normal;
+}
+
+/* ใช้ฟอนต์ italic สำหรับเนื้อหาหรือหัวข้อย่อย */
+p, span, h4, h5, h6 {
+  font-family: 'PlusJakartaSans', sans-serif;
+  font-style: italic;
+}
+
+
 /* Reset */
 * {
     margin: 0;
