@@ -96,16 +96,18 @@ header {
 }
 
 .nav-menu > li.dropdown > a::after {
-    content: '';
-    display: inline-block;
-    margin-left: 5px;
-    width: 6px;
-    height: 6px;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    transform: rotate(45deg);
-    margin-top: 2px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  transform: rotate(45deg);
+  position: relative;
+  top: -3px;       /* ขยับขึ้นลง */
+  left: 7px;      /* ขยับไปทางขวา */
 }
+
 
 .nav-menu > li.dropdown:not(:has(ul)) > a::after {
     display: none;
