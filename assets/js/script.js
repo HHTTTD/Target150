@@ -91,6 +91,7 @@ async function loadContactWidget() {
 loadContactWidget();
 
 // ✅ Contact widget logic
+/*
 function setupChatWidget() {
   const toggleBtn = document.getElementById('chat-toggle');
   const popup = document.getElementById('chat-popup');
@@ -145,7 +146,7 @@ function setupChatWidget() {
 
 document.addEventListener('DOMContentLoaded', setupChatWidget);
 
-
+*/
 
 // ✅ ปุ่ม About Us ในมือถือ
 document.addEventListener('click', function (e) {
