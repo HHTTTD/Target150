@@ -195,13 +195,13 @@
       .card-content {
         background: #fff;
         border-radius: 12px;
-        padding: 55px;
+        padding: 40px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         border: 1px solid transparent;
         transition: 0.3s ease;
         width: 100%;
         max-width: 328px;
-        margin: 0 auto ;
+        margin: 0 25px ;
         
       }
 
