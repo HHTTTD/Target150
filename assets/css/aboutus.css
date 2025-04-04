@@ -473,7 +473,9 @@
     flex: 0 0 85%;
     scroll-snap-align: start;
     border-radius: 12px;
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 200px;
   }
 
   .choose-card h3 {
