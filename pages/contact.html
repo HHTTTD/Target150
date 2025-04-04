@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Target150 - Contact Us</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target150 - Contact Us</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <div id="header"></div>
+  <!-- Header -->
+  <div id="header"></div>
 
-    <!-- Contact Section -->
-<section class="contact-page">
+  <!-- Contact Section -->
+  <section class="contact-page">
     <h1 class="contact-title">Contact Us</h1>
-  
+
     <div class="contact-container">
       <!-- Left Column -->
       <div class="contact-info">
@@ -32,46 +32,47 @@
         <div class="info-item">
           622 Emporium Tower Sukhumvit 24 Klongton Klongtoey Bangkok 10110 Thailand
         </div>
-  
+
         <!-- Map -->
         <div class="map-embed">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.797324297746!2d100.56570821528446!3d13.73006260140443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2ac0f0eb7b%3A0x49c1e0b49a123c9b!2s622%20Emporium%20Tower%20Sukhumvit%2024%20Klongton%20Klongtoey%20Bangkok%2010110%20Thailand!5e0!3m2!1sen!2sth!4v1711010100000!5m2!1sen!2sth" 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.797324297746!2d100.56570821528446!3d13.73006260140443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2ac0f0eb7b%3A0x49c1e0b49a123c9b!2s622%20Emporium%20Tower%20Sukhumvit%2024%20Klongton%20Klongtoey%20Bangkok%2010110%20Thailand!5e0!3m2!1sen!2sth!4v1711010100000!5m2!1sen!2sth"
             width="100%" height="280" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
       </div>
-  
+
       <!-- Right Column -->
       <div class="contact-form">
         <p class="description">Investing in your future health can be a tough decision. Contact us for answers to any of your questions and address any possible concerns.</p>
-        <form>
-            <!-- Title Dropdown -->
-            <div class="form-group">
-                <select id="title" class="select-title">
-                  <option>Mr.</option>
-                  <option>Mrs.</option>
-                  <option>Ms.</option>
-                </select>
-              </div>
-  
+
+        <form action="https://formspree.io/f/xldjppan" method="POST">
+          <!-- Title Dropdown -->
+          <div class="form-group">
+            <select id="title" name="title" class="select-title">
+              <option>Mr.</option>
+              <option>Mrs.</option>
+              <option>Ms.</option>
+            </select>
+          </div>
+
           <div class="form-group double">
-            <input type="text" placeholder="First name">
-            <input type="text" placeholder="Last name">
+            <input type="text" name="firstName" placeholder="First name" required>
+            <input type="text" name="lastName" placeholder="Last name" required>
           </div>
-  
+
           <div class="form-group">
-            <input type="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email" required>
           </div>
-  
+
           <div class="form-group">
-            <input type="tel" placeholder="Number">
+            <input type="tel" name="phone" placeholder="Number">
           </div>
 
           <!-- Menu Dropdown -->
           <div class="form-group">
             <label for="menu">Menu</label>
-            <select id="menu" class="select-menu">
+            <select id="menu" name="menu" class="select-menu">
               <option>Medical</option>
               <option>AFS Cells</option>
               <option>Cosmetic</option>
@@ -87,22 +88,21 @@
               <option>MICRONUTRIENTS Test</option>
             </select>
           </div>
-  
+
           <div class="form-group">
-            <textarea placeholder="Message"></textarea>
+            <textarea name="message" placeholder="Message" required></textarea>
           </div>
-  
+
           <button type="submit" class="send-btn">Send</button>
         </form>
       </div>
     </div>
   </section>
-  
 
-    <!-- Footer -->
-    <div id="footer"></div>
+  <!-- Footer -->
+  <div id="footer"></div>
 
-    <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
