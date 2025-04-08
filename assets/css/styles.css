@@ -690,6 +690,7 @@ header {
     font-size: 12px;
     color: rgb(0, 0, 0);
     line-height: 1.5;
+    font-weight: bolder;
   }
   
   /* Client Media (ขวา) */
