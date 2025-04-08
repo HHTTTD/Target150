@@ -927,7 +927,8 @@ header {
 
 .footer-menus ul li {
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     color: #000;
 }
 
@@ -1014,7 +1015,7 @@ header {
   }
   
   .research-header h2 {
-    font-size: 28px;
+    font-size: 40px;
     color: #027F00;
   }
   
