@@ -210,6 +210,21 @@
         background-color: #f4fff9;
         box-shadow: 0 0 12px rgba(10, 175, 63, 0.3);
     }
+
+    .conclusion-wrapper {
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+    .conclusion-text {
+      font-size: 14px;
+      line-height: 1.5;
+      width: 400px;
+    }
+    .conclusion-text span {
+      color: #027F00;
+      font-weight: bold;
+    }
+    
     }
   }
   
