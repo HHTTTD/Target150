@@ -18,13 +18,14 @@
   }
   
   .hero-about-text h1 {
-    font-size: 48px;
+    font-size: 87px;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 20px;
   }
   
   .hero-about-text h1 span {
+    font-size: 80px;
     color: #027F00;
   }
   
@@ -127,6 +128,11 @@
      align-items: center;
      gap: 6px;                /* ช่องว่างระหว่างคำ */
      margin-bottom: 15px;
+    }
+
+    .hero-about-text h1 span {
+      font-size: 32px;
+      color: #027F00;
     }
   
     .hero-about-text p {
