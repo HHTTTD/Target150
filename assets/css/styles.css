@@ -30,6 +30,7 @@ p, span, h4, h5, h6, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 13px;
 }
 
 body {
