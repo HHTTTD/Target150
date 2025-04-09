@@ -649,6 +649,20 @@ header {
     align-items: flex-start;
     justify-content: space-between;
   }
+
+  .client-stars {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .star-icon {
+    margin-left: -2cap;
+    margin-bottom: -1cap;
+    width: 50px;
+    height: 50px;
+  }  
   
   /* Client Info (ซ้าย) */
   .client-info {
@@ -665,6 +679,7 @@ header {
   }
   
   .client-name strong {
+    flex-direction: row-reverse;
     font-size: 14px;
   }
   
