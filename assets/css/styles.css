@@ -965,12 +965,14 @@ header {
 .footer-logo img {
     width: 300px;
     margin-bottom: 10px;
+    margin-top: -20px;
     margin-left: -25px;
 }
 
 .footer-logo p {
     font-size: 9px;
     color: #027F00;
+    margin-top: 80px;
 }
 
 /* เมนู */
@@ -991,6 +993,10 @@ header {
     font-weight: bold;
     margin-bottom: 5px;
     color: #027F00;
+}
+
+.footer-menus .disclaimer-title {
+  margin-bottom: 30px;
 }
 
 .footer-menus ul {
@@ -1417,6 +1423,10 @@ header {
   .footer-menus .contact-column {
     grid-column: span 2;
   }
+
+  
+
+  .footer-menus 
 
   .footer::after {
     content: "© 2024 Target150, A Knightsbridge Group Company. All rights reserved.";
