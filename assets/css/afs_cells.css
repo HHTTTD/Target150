@@ -34,7 +34,7 @@
     color: #027F00;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     font-weight: 600;
     letter-spacing: 1px;
   }
@@ -42,7 +42,7 @@
   .afs-hero-left h3 {
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     color: #222;
   }
   
@@ -175,6 +175,7 @@
 .product-info-item h4 {
     font-weight: bold;
     text-align: left;
+    color: #027F00;
 }
 
 .product-info-item p {
