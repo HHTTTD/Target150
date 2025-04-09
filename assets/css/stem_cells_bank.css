@@ -1,6 +1,5 @@
 .cosmehc-section {
-    padding: 80px 20px;
-    background: #fff;
+    padding: 10px 20px;
     font-family: 'Arial', sans-serif;
   }
   
@@ -11,13 +10,16 @@
   
   .page-title {
     color: #027F00;
-    font-size: 42px;
+    font-size: 50px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00;
     margin-bottom: 10px;
   }
   
   .sub-heading {
     font-size: 18px;
     margin-bottom: 30px;
+    font-weight: bolder;
     color: #333;
   }
   
@@ -38,6 +40,7 @@
   
   .text p {
     margin-bottom: 20px;
+    font-weight: bolder;
   }
   
   .image {
@@ -46,11 +49,12 @@
   }
   
   .image img {
-    width: 425px;
-    height: 470px;
+    width: 480px;
+    height: 600px;
     object-fit: cover;
     object-position: center;
     border-radius: 12px;
+    margin-left: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
   

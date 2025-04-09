@@ -18,15 +18,17 @@
   }
   
   .hero-about-text h1 {
-    font-size: 87px;
+    font-size: 70px;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 20px;
+    -webkit-text-stroke: 2px #000
   }
   
   .hero-about-text h1 span {
-    font-size: 80px;
+    font-size: 67px;
     color: #027F00;
+    -webkit-text-stroke: 0px #027F00
   }
   
   .hero-about-text p {
@@ -314,7 +316,9 @@
   
   .why-choose h2 span {
     color: inherit;
-    font-size: 60px;
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00;
   }
   
   /* Card Layout */

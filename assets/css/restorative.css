@@ -21,8 +21,10 @@
 
 .text-block h1 {
     color: #027F00;
-    font-size: 60px;
-    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00;
+    margin-bottom: 40px;
 }
 
 .text-block h2 {

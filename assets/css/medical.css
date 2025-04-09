@@ -4,10 +4,11 @@
 }
 
 .medical-page h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00;
     color: #027F00;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
 }
 
 .medical-page h3 {
@@ -25,7 +26,7 @@
 .medical-cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 75px;
     flex-wrap: wrap;
 }
 
@@ -46,3 +47,7 @@
     color: #027F00;
 }
 
+.medical-card p {
+    font-size: 15px;
+    font-weight: 100;
+}

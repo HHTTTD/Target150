@@ -1,6 +1,5 @@
 .micronutrient-section {
-    padding: 80px 20px;
-    background: #fff;
+    padding: 10px 20px;
     font-family: 'Arial', sans-serif;
   }
   
@@ -23,10 +22,16 @@
     line-height: 1.7;
     color: #333;
   }
+  .text p {
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
   
   .page-title {
     color: #027F00;
-    font-size: 42px;
+    font-size: 50px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00;
     margin-bottom: 30px;
     line-height: 1.2;
   }
@@ -34,7 +39,7 @@
   .text h4 {
     font-size: 16px;
     color: #027F00;
-    margin-bottom: 20px;
+    margin-bottom: -5px;
   }
   
   .text ul {
@@ -50,6 +55,7 @@
   
   .text li::marker {
     color: #027F00;
+    font-size: 25px;
   }
   
   .highlight {

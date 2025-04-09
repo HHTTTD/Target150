@@ -1,7 +1,6 @@
 .lab-section {
-    padding: 80px 20px;
+    padding: 10px 20px;
     font-family: 'Arial', sans-serif;
-    background: #fff;
   }
   
   .container {
@@ -12,16 +11,18 @@
   .lab-title {
     text-align: center;
     color: #027F00;
-    font-size: 42px;
+    font-size: 50px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00;
     margin-bottom: 60px;
   }
   
   .lab-images {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
   }
   
   .img-box {
@@ -41,7 +42,7 @@
   
   .lab-columns {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
@@ -70,6 +71,7 @@
   
   .lab-col p {
     margin-bottom: 15px;
+    font-weight: bolder;
   }
 
   /* ซ่อนไว้ก่อน */

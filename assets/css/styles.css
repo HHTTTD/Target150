@@ -19,7 +19,7 @@ h1, h2, h3 {
 }
 
 /* ใช้ฟอนต์ italic สำหรับเนื้อหาหรือหัวข้อย่อย */
-p, span, h4, h5, h6 {
+p, span, h4, h5, h6, li {
   font-family: 'PlusJakartaSans', sans-serif;
   font-style: medium;
 }
@@ -234,15 +234,18 @@ header {
 }
 
 .hero-about-text h1 {
-  font-size: 87px;
+  font-size: 70px;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
+  -webkit-text-stroke: 2px #000
 }
 
 .hero-about-text h1 span {
-  font-size: 80px;
+  font-size: 67px;
+  font-weight: 600px;
   color: #027F00;
+  -webkit-text-stroke: 0px #027F00
 }
 
 .hero-about-text p {
@@ -1057,6 +1060,8 @@ header {
   .section-title.green {
     font-size: 40px;
     color: #027F00;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00
   }
   
   /* Research header */
@@ -1069,7 +1074,9 @@ header {
   
   .research-header h2 {
     font-size: 40px;
+    font-weight: bolder;
     color: #027F00;
+    -webkit-text-stroke: 1px #027F00
   }
   
   .see-more {

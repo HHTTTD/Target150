@@ -17,12 +17,16 @@
   .clinical-app h1 {
     text-align: center;
     color: #027F00;
-    font-size: 80px;
-    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00;
+    margin-bottom: -35px;
   }
   
   .section h2 {
-    font-size: 60px;
+    font-size: 35px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #027F00;
     margin-bottom: 20px;
     color: #027F00;
     text-align: left;
