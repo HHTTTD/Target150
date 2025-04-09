@@ -456,6 +456,25 @@ header {
   transition: transform 0.3s ease;
 }
 
+.image-box .second-img1 {
+  object-position: 68% center;
+}
+
+.image-box .second-img2 {
+  object-position: 17% center;
+  transform: scale(1.1);
+}
+
+.image-box .second-img3 {
+  object-position: 80% center;
+}
+
+.image-box .second-img4 {
+  object-position: 50% center;
+  transform: scale(1.2);
+}
+
+
 .image-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);

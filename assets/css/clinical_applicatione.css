@@ -48,25 +48,28 @@
   }
   
   .image img {
-    width: 430px;
+    width: 400px;
     height: 500px;
     border-radius: 10px;
     object-fit: cover;
+    object-position: 58% center;
   }
   
   .image2 img {
-    width: 430px;
+    width: 400px;
     height: 500px;
     border-radius: 10px;
     object-fit: cover;
-    margin-top: -55px
+    margin-top: -55px;
+    object-position: 50% center;
   }
 
   .image3 img {
-    width: 430px;
+    width: 400px;
     height: 500px;
     border-radius: 10px;
     object-fit: cover;
+    object-position: 13% center;
   }
   /* Text Block */
   .text {
