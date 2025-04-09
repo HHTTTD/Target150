@@ -928,6 +928,7 @@ header {
 .footer-logo img {
     width: 300px;
     margin-bottom: 10px;
+    margin-left: -25px;
 }
 
 .footer-logo p {
