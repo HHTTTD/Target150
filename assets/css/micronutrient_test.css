@@ -11,7 +11,7 @@
   .content-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 100px;
     align-items: flex-start;
   }
   
@@ -68,7 +68,7 @@
   }
   
   .image img {
-    width: 100%;
+    width: 82%;
     height: 520px;
     object-fit: cover;
     border-radius: 12px;
