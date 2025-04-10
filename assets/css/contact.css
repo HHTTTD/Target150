@@ -3,16 +3,11 @@
     padding: 60px 50px;
   }
 
-  h3 {
+  span {
     font-size: 14px;
     text-align: left;
   }
 
-  h4 {
-    font-size: 14px;
-    text-align: left;
-  }
-  
   .contact-title {
     font-size: 50px;
     font-weight: bolder;

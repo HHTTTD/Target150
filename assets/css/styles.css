@@ -682,7 +682,7 @@ header {
   .clients-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 85px;
     align-items: flex-start;
     justify-content: space-between;
   }
