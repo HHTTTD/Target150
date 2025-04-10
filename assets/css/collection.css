@@ -82,7 +82,7 @@
   
   .card {
     background: #fff;
-    border-radius: 16px;
+    border-radius: 0 6px 16px 16px;
     padding: 30px;
     flex: 1;
     min-width: 300px;
@@ -92,12 +92,15 @@
   .card-header.green {
     background: #027F00;
     color: #fff;
-    padding: 8px 16px;
-    border-radius: 6px 6px 0 0;
+    padding: 18px 25px;
+    border-radius: 0px 0px 16px 0px;
     font-weight: bold;
     font-size: 14px;
     width: fit-content;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    align-self: flex-start;
+    margin-left: -30px;
+    margin-top: -30px;
   }
   
   .card-body h4 {
@@ -125,9 +128,15 @@
     .cards-grid {
       flex-direction: column;
     }
-  
+
     .image img {
-      max-height: none;
-    }
+      width: 400px;
+      height: 550px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
   }
   
