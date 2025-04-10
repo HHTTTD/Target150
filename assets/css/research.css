@@ -41,7 +41,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 30px 0;
+    margin: 30px 200px;
     justify-content: center;
   }
   .tabs .tab {
@@ -153,6 +153,7 @@
     font-size: 18px;
     color: #027F00;
     font-weight: 600;
+    margin-top: 25px;
     margin-bottom: 10px;
   }
   .overall-conclusion p {
@@ -193,7 +194,7 @@
   @media (max-width: 768px) {
     .research-cards {
       grid-template-columns: 1fr;
-      
+    }
       .card-content {
         background: #fff;
         border-radius: 12px;
@@ -226,7 +227,15 @@
       color: #027F00;
       font-weight: bold;
     }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 30px 0px;
+      justify-content: center;
+    }
     
     }
-  }
+  
   
