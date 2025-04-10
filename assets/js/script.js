@@ -58,6 +58,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.addEventListener('click', function (e) {
+    if (window.innerWidth <= 768) {
+      const aboutBtn = e.target.closest('.about-btn');
+      if (aboutBtn) {
+        const target = aboutBtn.getAttribute('data-target');
+        window.location.href = target || 'pages/aboutus.html';
+      }
+    }
+  });
+  
+    // ✅ ไฮไลท์จาก anchor (#cardX) เมื่อเข้าหน้านี้
+    const hash = window.location.hash;
+    if (hash) {
+      const targetCard = document.querySelector(hash);
+      if (targetCard && targetCard.classList.contains('card-group')) {
+        // เอา highlight อันอื่นออกก่อน
+        document.querySelectorAll('.card-group.highlight').forEach(el => {
+          el.classList.remove('highlight');
+        });
+  
+        // เพิ่ม highlight แล้วลบออกหลัง 3 วินาที
+        targetCard.classList.add('highlight');
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  
+        setTimeout(() => {
+          targetCard.classList.remove('highlight');
+        }, 3000);
+      }
+    }
+
   cardGroups.forEach(card => {
     card.addEventListener('click', () => {
       const id = card.getAttribute('id');
@@ -158,24 +188,4 @@ document.addEventListener('click', function (e) {
     }
   }
 });
-
-  // ✅ ไฮไลท์จาก anchor (#cardX) เมื่อเข้าหน้านี้
-  const hash = window.location.hash;
-  if (hash) {
-    const targetCard = document.querySelector(hash);
-    if (targetCard && targetCard.classList.contains('card-group')) {
-      // เอา highlight อันอื่นออกก่อน
-      document.querySelectorAll('.card-group.highlight').forEach(el => {
-        el.classList.remove('highlight');
-      });
-
-      // เพิ่ม highlight แล้วลบออกหลัง 3 วินาที
-      targetCard.classList.add('highlight');
-      targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-      setTimeout(() => {
-        targetCard.classList.remove('highlight');
-      }, 3000);
-    }
-  }
 
