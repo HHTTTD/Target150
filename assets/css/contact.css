@@ -1,6 +1,6 @@
 /* Contact Page Layout */
 .contact-page {
-    padding: 60px 20px;
+    padding: 60px 50px;
   }
 
   h4 {
@@ -54,6 +54,7 @@
   .contact-form {
     flex: 1;
     min-width: 300px;
+    max-width: 390px;
   }
   
   .contact-form .description {
@@ -127,7 +128,7 @@
   
   .send-btn {
     background-color: #027F00;
-    width: 150px;
+    width: 120px;
     color: #fff;
     border: none;
     padding: 10px 30px;
