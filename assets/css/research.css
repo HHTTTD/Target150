@@ -83,7 +83,11 @@
     max-width: 450px;
     width: 200%;
   }
-  
+
+  .card-group .card-content {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+  }
+
   .card-content {
     background: #fff;
     border-radius: 12px;

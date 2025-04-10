@@ -40,6 +40,10 @@ header {
     position: relative;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
