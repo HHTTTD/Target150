@@ -20,20 +20,21 @@
   .content-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 100px;
     align-items: center;
   }
   
   .image {
     flex: 1;
     min-width: 300px;
+    text-align: right;
   }
   
   .image img {
-    width: 425px;
-    height: 470px;
+    width: 520px;
+    height: 600px;
     object-fit: cover;
-    object-position: center;
+    object-position: 64% center;
     border-radius: 12px;
     border: 1px solid #ccc;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
