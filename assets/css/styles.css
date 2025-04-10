@@ -749,6 +749,9 @@ header {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    position: relative;
+    top: -20px;   
+    left: 50px;  
   }
   
   .image-main,
@@ -804,6 +807,26 @@ header {
     margin-bottom: 30px;
 }
 
+@media (max-width: 768px){
+
+  .our-clients-container {
+    max-width: 1140px;
+    margin: 0px 30px;
+    padding: 50px 0px;
+}
+  .client-media {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    top: -20px;
+    left: 0px;
+}
+
+
+}
+
 /* Center container */
 .search-bar {
     display: flex;
@@ -854,6 +877,8 @@ header {
     font-size: 13px;
     color: #ccc;
 }
+
+
 
 
 /* ===== Contact Widget ===== */
