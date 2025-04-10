@@ -19,7 +19,7 @@ h1, h2, h3 {
 }
 
 /* ใช้ฟอนต์ italic สำหรับเนื้อหาหรือหัวข้อย่อย */
-p, span, h4, h5, h6, li {
+p, span, h4, h5, h6, li, strong {
   font-family: 'PlusJakartaSans', sans-serif;
   font-style: medium;
 }

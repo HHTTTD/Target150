@@ -45,9 +45,15 @@
   .text p {
     margin-bottom: 16px;
     font-size: 14px;
-    font-weight: bolder;
     line-height: 1.7;
     color: #333;
+  }
+
+  .text strong a {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #000;
   }
   
   .image {
@@ -77,7 +83,7 @@
   .references ol {
     padding-left: 20px;
     font-size: 11px;
-    margin-right: 575px;
+    width: 575px;
   }
   
   .references li {
