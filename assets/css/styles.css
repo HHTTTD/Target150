@@ -30,8 +30,6 @@ p, span, h4, h5, h6, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 13px;
-    color: #000;
 }
 
 body {
@@ -657,6 +655,13 @@ header {
     padding: 60px 0;
   }
 
+  .client-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
   .clients h2 {
     font-size: 28px;
     color: #027F00;
@@ -704,7 +709,7 @@ header {
   
   .client-name strong {
     flex-direction: row-reverse;
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .client-name p {
@@ -977,6 +982,10 @@ header {
     margin-top: 80px;
 }
 
+.footer-menus .disclaimer-title {
+  margin-bottom: 30px;
+}
+
 /* เมนู */
 .footer-menus {
     flex: 3;
@@ -995,10 +1004,6 @@ header {
     font-weight: bold;
     margin-bottom: 5px;
     color: #027F00;
-}
-
-.footer-menus .disclaimer-title {
-  margin-bottom: 30px;
 }
 
 .footer-menus ul {
@@ -1425,10 +1430,6 @@ header {
   .footer-menus .contact-column {
     grid-column: span 2;
   }
-
-  
-
-  .footer-menus 
 
   .footer::after {
     content: "© 2024 Target150, A Knightsbridge Group Company. All rights reserved.";
