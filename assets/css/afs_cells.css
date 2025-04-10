@@ -233,7 +233,7 @@
     height: 120px;
     object-fit: cover;
     border-radius: 12px;
-    margin-bottom: 8px; /* เพิ่มระยะห่างด้านล่าง */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
 }
 
 /* ซ้าย */
