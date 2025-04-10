@@ -2,6 +2,11 @@
 .contact-page {
     padding: 60px 20px;
   }
+
+  h4 {
+    font-size: 14px;
+    text-align: left;
+  }
   
   .contact-title {
     font-size: 50px;
@@ -122,6 +127,7 @@
   
   .send-btn {
     background-color: #027F00;
+    width: 150px;
     color: #fff;
     border: none;
     padding: 10px 30px;
