@@ -189,3 +189,103 @@ document.addEventListener('click', function (e) {
   }
 });
 
+
+// Contact Us Dropdown
+
+document.addEventListener('DOMContentLoaded', () => {
+  // 🔹 Title Dropdown
+  const titleToggle = document.querySelector('.title-toggle');
+  const titleMenu = document.querySelector('.title-menu');
+  const titleInput = document.getElementById('selected-title');
+
+  if (titleToggle && titleMenu && titleInput) {
+    titleToggle.addEventListener('click', () => {
+      titleMenu.style.display = titleMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.custom-title-dropdown')) {
+        titleMenu.style.display = 'none';
+      }
+    });
+
+    titleMenu.querySelectorAll('li').forEach(item => {
+      item.addEventListener('click', () => {
+        const selected = item.textContent;
+        titleToggle.textContent = selected + ' ▾';
+        titleInput.value = selected;
+        titleMenu.style.display = 'none';
+      });
+    });
+  }
+
+  // 🔹 Menu Dropdown (Main toggle)
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuList = document.querySelector('.menu-list');
+  const menuInput = document.getElementById('selected-menu');
+
+  if (menuToggle && menuList && menuInput) {
+    menuToggle.addEventListener('click', () => {
+      menuList.style.display = menuList.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.custom-menu-dropdown')) {
+        menuList.style.display = 'none';
+        document.querySelectorAll('.has-submenu').forEach(p => {
+          p.classList.remove('open');
+          const submenu = p.querySelector('.submenu');
+          if (submenu) submenu.style.display = 'none';
+        });
+      }
+    });
+
+    // 🔸 เปิด/ปิด submenu
+    const submenuParents = document.querySelectorAll('.menu-list .has-submenu > a');
+    submenuParents.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = link.closest('.has-submenu');
+        parent.classList.toggle('open');
+        const submenu = parent.querySelector('.submenu');
+        if (submenu) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+      });
+    });
+
+    // 🔸 คลิกเลือกเมนูย่อย
+    const subItems = document.querySelectorAll('.menu-list .submenu li');
+    subItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const selected = item.textContent;
+        menuToggle.textContent = selected + ' ▾';
+        menuInput.value = selected;
+        menuList.style.display = 'none';
+
+        document.querySelectorAll('.has-submenu').forEach(p => {
+          p.classList.remove('open');
+          const submenu = p.querySelector('.submenu');
+          if (submenu) submenu.style.display = 'none';
+        });
+      });
+    });
+
+    // ✅ เพิ่มส่วนนี้: กดเลือกเมนูที่ไม่มี submenu (Other)
+    const flatItems = document.querySelectorAll('.menu-list > li:not(.has-submenu)');
+    flatItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const selected = item.textContent;
+        menuToggle.textContent = selected + ' ▾';
+        menuInput.value = selected;
+        menuList.style.display = 'none';
+
+        document.querySelectorAll('.has-submenu').forEach(p => {
+          p.classList.remove('open');
+          const submenu = p.querySelector('.submenu');
+          if (submenu) submenu.style.display = 'none';
+        });
+      });
+    });
+  }
+});

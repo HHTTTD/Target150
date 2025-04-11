@@ -46,14 +46,18 @@
         <p class="description">Investing in your future health can be a tough decision. Contact us for answers to any of your questions and address any possible concerns.</p>
 
         <form action="https://formspree.io/f/xldjppan" method="POST">
-          <!-- Title Dropdown -->
-          <div class="form-group">
-            <select id="title" name="title" class="select-title">
-              <option>Mr.</option>
-              <option>Mrs.</option>
-              <option>Ms.</option>
-            </select>
-          </div>
+          <!-- Hidden input to submit selected title -->
+       <input type="hidden" name="title" id="selected-title" value="">
+       <!-- Custom Title Dropdown -->
+       <div class="custom-title-dropdown">
+       <div class="title-toggle">Mr. ▾</div>
+        <ul class="title-menu">
+        <li>Mr.</li>
+        <li>Mrs.</li>
+        <li>Ms.</li>
+         </ul>
+       </div>
+
 
           <div class="form-group double">
             <input type="text" name="firstName" placeholder="First name" required>
@@ -68,38 +72,58 @@
             <input type="tel" name="phone" placeholder="Number">
           </div>
 
-          <!-- Menu Dropdown -->
-          <div class="form-group">
-            <select id="menu" name="menu" class="select-menu">
-              <optgroup label="Stem Cells Therapy" >
-                <option>Medical</option>
-                <option>AFS Cells</option>
-                <option>CosmeHC</option>
-                <option>Restorative</option>
-                <option>Hair Restoration</option>
-              </optgroup>
-            
-              <optgroup label="NK Cells">
-                <option>NK Cells Therapy</option>
-                <option>Immunity Test</option>
-              </optgroup>
-            
-              <optgroup label="Stem Cells Banking">
-                <option>Stem Cells Bank</option>
-                <option>Collection</option>
-                <option>Our Laboratory</option>
-              </optgroup>
-            
-              <optgroup label="BIO-LONGEVITY Screening">
-                <option>Immunity test</option>
-                <option>Hormone test</option>
-                <option>Vitamin test</option>
-                <option>Micronutrients test</option>
-              </optgroup>
-            
-              <option>Other</option>
-            </select>
-          </div>
+          <!-- Hidden input to send selected menu -->
+<input type="hidden" name="menu" id="selected-menu" value="">
+
+<!-- Custom Menu Dropdown -->
+<div class="custom-menu-dropdown">
+  <div class="menu-toggle">Menu ▾</div>
+  <ul class="menu-list">
+
+    <li class="has-submenu">
+      <a href="#">Stem Cells Therapy <span class="arrow"></span></a>
+      <ul class="submenu">
+        <li>Medical</li>
+        <li>AFS Cells</li>
+        <li>CosmeHC</li>
+        <li>Restorative</li>
+        <li>Hair Restoration</li>
+      </ul>
+    </li>
+
+    <li class="has-submenu">
+      <a href="#">NK Cells <span class="arrow"></span></a>
+      <ul class="submenu">
+        <li>NK Cells Therapy</li>
+        <li>Immunity Test</li>
+      </ul>
+    </li>
+
+    <li class="has-submenu">
+      <a href="#">Stem Cells Banking <span class="arrow"></span></a>
+      <ul class="submenu">
+        <li>Stem Cells Bank</li>
+        <li>Collection</li>
+        <li>Our Laboratory</li>
+      </ul>
+    </li>
+
+    <li class="has-submenu">
+      <a href="#">BIO-LONGEVITY Screening <span class="arrow"></span></a>
+      <ul class="submenu">
+        <li>Immunity test</li>
+        <li>Hormone test</li>
+        <li>Vitamin test</li>
+        <li>Micronutrients test</li>
+      </ul>
+    </li>
+
+    <li>Other</li>
+
+  </ul>
+</div>
+
+
 
           <div class="form-group">
             <input name="message" placeholder="Message" required></input>
