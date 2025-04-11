@@ -1076,6 +1076,12 @@ html {
     color: #027F00; 
 }
 
+.footer span {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
 /* สีพื้นหลังเทาอ่อน */
 .light-gray-bg {
     background-color: #edefea;
