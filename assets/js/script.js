@@ -1,4 +1,4 @@
-// โหลด header และ footer
+// ✅ โหลด header และ footer
 async function loadComponents() {
   const [headerRes, footerRes] = await Promise.all([
     fetch('../components/header.html'),
@@ -11,9 +11,11 @@ async function loadComponents() {
   document.getElementById('header').innerHTML = headerHTML;
   document.getElementById('footer').innerHTML = footerHTML;
 
-  setupMobileToggle();
+  // ✅ รอให้ DOM update เสร็จจริงก่อนเรียก setup
+  requestAnimationFrame(() => {
+    setupMobileToggle();
+  });
 }
-
 loadComponents();
 
 // ✅ Mobile menu toggle
@@ -191,7 +193,6 @@ document.addEventListener('click', function (e) {
 
 
 // Contact Us Dropdown
-
 document.addEventListener('DOMContentLoaded', () => {
   // 🔹 Title Dropdown
   const titleToggle = document.querySelector('.title-toggle');
@@ -232,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (e) => {
       if (!e.target.closest('.custom-menu-dropdown')) {
         menuList.style.display = 'none';
-        document.querySelectorAll('.has-submenu').forEach(p => {
+        document.querySelectorAll('.menu-group').forEach(p => {
           p.classList.remove('open');
           const submenu = p.querySelector('.submenu');
           if (submenu) submenu.style.display = 'none';
@@ -241,11 +242,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 🔸 เปิด/ปิด submenu
-    const submenuParents = document.querySelectorAll('.menu-list .has-submenu > a');
+    const submenuParents = document.querySelectorAll('.menu-list .menu-group > a');
     submenuParents.forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        const parent = link.closest('.has-submenu');
+        const parent = link.closest('.menu-group');
         parent.classList.toggle('open');
         const submenu = parent.querySelector('.submenu');
         if (submenu) {
@@ -263,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuInput.value = selected;
         menuList.style.display = 'none';
 
-        document.querySelectorAll('.has-submenu').forEach(p => {
+        document.querySelectorAll('.menu-group').forEach(p => {
           p.classList.remove('open');
           const submenu = p.querySelector('.submenu');
           if (submenu) submenu.style.display = 'none';
@@ -272,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ✅ เพิ่มส่วนนี้: กดเลือกเมนูที่ไม่มี submenu (Other)
-    const flatItems = document.querySelectorAll('.menu-list > li:not(.has-submenu)');
+    const flatItems = document.querySelectorAll('.menu-list > li:not(.menu-group)');
     flatItems.forEach(item => {
       item.addEventListener('click', () => {
         const selected = item.textContent;
@@ -280,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuInput.value = selected;
         menuList.style.display = 'none';
 
-        document.querySelectorAll('.has-submenu').forEach(p => {
+        document.querySelectorAll('.menu-group').forEach(p => {
           p.classList.remove('open');
           const submenu = p.querySelector('.submenu');
           if (submenu) submenu.style.display = 'none';
