@@ -108,12 +108,16 @@
     }
   
     .hero-about-left-img img {
-      height: 410px;
+      height: 340px;
     }
   
     .hero-about-right-img img {
-      height: 200px;
+      height: 210px;
     }
+
+    .hero-about-right-img img:last-child {
+      height: 120px;
+  }
 
 
     .hero-about-text {

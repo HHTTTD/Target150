@@ -239,6 +239,13 @@
       margin: 30px 0px;
       justify-content: center;
     }
+
+    .overall-conclusion p {
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 1100px;
+      margin-bottom: 70px;
+    }
     
     }
   

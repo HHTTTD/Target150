@@ -328,12 +328,16 @@ html {
   }
 
   .hero-about-left-img img {
-    height: 410px;
+    height: 340px;
   }
 
   .hero-about-right-img img {
-    height: 200px;
+    height: 210px;
   }
+
+  .hero-about-right-img img:last-child {
+    height: 120px;
+}
 
 
   .hero-about-text {
@@ -505,6 +509,12 @@ html {
 
   .service-header {
     text-align: center;
+  }
+
+  .service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
   }
 }
 
@@ -1603,13 +1613,14 @@ html {
 /* Research */
 @media (max-width: 768px) {
   .research {
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
 
   .research-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    padding-left: 15px;
   }
 
   .research-header h2 {
@@ -1630,10 +1641,8 @@ html {
     min-width: 280px;
     flex-shrink: 0;
     scroll-snap-align: start;
-    background: #fff;
     padding: 16px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1642,8 +1651,8 @@ html {
 
   .research-left img,
   .small-card img {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 275px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
