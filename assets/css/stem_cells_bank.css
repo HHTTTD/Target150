@@ -63,6 +63,21 @@
     .content-row {
       flex-direction: column;
     }
+
+    .page-title {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .text p {
+      margin-bottom: 20px;
+      width: 370px;
+    }
+
+    .sub-heading {
+      font-size: 15px;
+      text-align: center;
+    }
   
     .image img {
       width: 80%;

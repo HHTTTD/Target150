@@ -128,9 +128,19 @@
       flex-direction: column;
     }
 
+    .text .section-label {
+      text-align: center;
+    }
+
+    .text .title {
+      font-size: 32px;
+      text-align: center;
+    }
+
     .image img {
-      width: 400px;
+      width: 370px;
       height: 550px;
+      margin: 20px auto;
       object-fit: cover;
       object-position: center;
       border-radius: 12px;

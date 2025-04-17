@@ -91,6 +91,9 @@
   @media (max-width: 768px) {
     .img-mobile-only {
       display: block;
+      width: 350px;
+      height: 180px;
+      margin-left: 15px;
     }
   
     .img-desktop-only {
@@ -108,8 +111,8 @@
     }
   
     .img-box img {
-      max-width: 90%;
-      height: auto;
+      width: 320px;
+      height: 350px;
       border-radius: 12px;
     }
   }

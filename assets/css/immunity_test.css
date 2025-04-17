@@ -59,11 +59,16 @@
   @media (max-width: 768px) {
     .content-row {
       flex-direction: column;
+      gap: 25px;
+    }
+
+    .title {
+      font-size: 32px;
     }
   
     .image img {
-      height: auto;
-      width: 80%;
+      height: 500px;
+      width: 90%;
       margin: 0 auto;
       display: block;
     }

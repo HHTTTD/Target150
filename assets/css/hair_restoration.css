@@ -66,27 +66,6 @@
     border: none;
 }
 
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hair-restoration-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-block {
-        padding-right: 0;
-    }
-
-    .image-block {
-        max-width: 100%;
-    }
-
-    .image-block img {
-        height: auto;
-    }
-}
-
 .customer-reviews {
     max-width: 1200px;
     margin: 80px auto;
@@ -116,5 +95,60 @@
     max-width: 250px;
     border-radius: 20px;
     object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hair-restoration-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hair-restoration-page {
+        padding: 0px 25px;
+    }
+
+    .text-block h1 {
+        font-size: 35px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .customer-reviews h2 {
+        font-size: 30px;
+        margin-bottom: 80px;
+        margin-left: 0px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .text-block p {
+        width: 340px;
+    }
+
+    .text-block {
+        padding-right: 0;
+    }
+
+    .image-block {
+        max-width: 100%;
+    }
+
+    .image-block img {
+        height: auto;
+    }
+    .review-item img {
+        width: 150px;
+        max-width: 250px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .reviews-gallery {
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
 }
 
