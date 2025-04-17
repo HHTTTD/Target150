@@ -264,6 +264,10 @@
       flex-direction: column;
     }
 
+    .contact-title {
+      font-size: 32px;
+  }
+
     .map-embed iframe {
     width: 100%;
     height: 280px;

@@ -101,6 +101,12 @@
 
     .mobile-img {
       display: block;
+      width: 300px;
+      height: 400px;
+      margin: 20px auto;
+      object-fit: cover;
+      object-position: 63% center;
+      border-radius: 12px;
     }
   
     .desktop-img {
