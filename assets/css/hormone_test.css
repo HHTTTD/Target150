@@ -76,6 +76,18 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.mobile-img {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 12px;
+  }
+  
+  .desktop-img {
+    display: block;
+  }
+
 /* Responsive */
 @media (max-width: 768px) {
     .content-row {
@@ -93,4 +105,12 @@
         margin: 0 auto;
         display: block;
     }
+
+    .mobile-img {
+        display: block;
+      }
+    
+      .desktop-img {
+        display: none;
+      }
 }
