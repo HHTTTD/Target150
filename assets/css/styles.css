@@ -1633,6 +1633,7 @@ html {
     align-items: flex-start;
     gap: 10px;
     padding-left: 15px;
+    margin-bottom: 5px;
   }
 
   .research-header h2 {
@@ -1707,9 +1708,10 @@ html {
 
   .see-more {
     align-self: flex-start;
-    font-size: 12px;
-    padding: 6px 16px;
+    font-size: 14px;
+    padding: 10px 25px;
     border-radius: 20px;
+    margin-top: 40px;
   }
 
   .research-right {

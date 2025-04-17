@@ -435,7 +435,7 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 20px;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 20px 15px 20px;
     scroll-padding-left: 20px;
   }
 
@@ -595,4 +595,29 @@
   }
 }
 
+.desktop-only.mobile-only {
+  display: none;
+}
+
+/* แสดงปุ่มเฉพาะในมือถือ */
+@media (max-width: 768px) {
+
+  .mobile-only {
+    display: block;
+    background: #027F00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0px auto 0 auto;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .mobile-only:hover {
+    background-color: #088c33;
+  }
+}
 
