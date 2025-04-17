@@ -366,13 +366,6 @@ html {
     line-height: 1.7;
     margin-bottom: 20px;
   }
-
-  .hero-about-text button {
-    display: block;
-    margin: 20px auto 0 auto;
-    font-size: 14px;
-    padding: 10px 20px;
-  }
 }
 
 /* Services Section */
@@ -1221,6 +1214,36 @@ html {
     background: #027F00;
 }
 
+/* ซ่อนไว้ก่อนทุกอัน */
+.desktop-only, .mobile-only {
+  display: none;
+}
+
+/* แสดงเฉพาะเดสก์ท็อป */
+@media (min-width: 769px) {
+  .desktop-only {
+    display: inline-block;
+  }
+}
+
+/* แสดงเฉพาะมือถือ */
+@media (max-width: 768px) {
+  
+  .mobile-only {
+    display: block;
+    background: #027F00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 16px auto 0 auto; /* ✅ อยู่กลาง */
+    text-align: center;
+  }
+}
+
+
 
 /* ===== Responsive Header ===== */
 @media (max-width: 768px) {
@@ -1530,17 +1553,6 @@ html {
     word-break: break-word;
   }
 
-  .hero-about-text button {
-    display: inline-block;
-    background: #027F00;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 16px;
-  }
 
   .hero-about-images {
     display: flex;
