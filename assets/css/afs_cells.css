@@ -297,6 +297,7 @@
 @media (max-width: 768px) {
     .benefit-columns {
         flex-direction: column;
+        gap: 0px;
     }
     .column:first-child .benefit-item img,
     .column:last-child .benefit-item img {
@@ -611,7 +612,7 @@
     border-radius: 25px;
     font-size: 14px;
     cursor: pointer;
-    margin: 0px auto 0 auto;
+    margin: 25px auto 0 auto;
     text-align: center;
     width: fit-content;
   }

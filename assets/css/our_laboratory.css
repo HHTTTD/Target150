@@ -89,6 +89,12 @@
   
   /* Responsive */
   @media (max-width: 768px) {
+
+    .lab-title {
+      margin-top: 25px;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
     .img-mobile-only {
       display: block;
       width: 350px;

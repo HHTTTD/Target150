@@ -139,6 +139,10 @@
       height: 500px;
       object-position: 22% center;
     }
+
+    .nk-block {
+      gap: 0px;
+  }
   
     .desktop-img {
       display: none;

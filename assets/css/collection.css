@@ -148,9 +148,11 @@
 
     .text .section-label {
       text-align: center;
+      margin-top: 25px;
     }
 
     .text .subheading {
+      font-size: 20px;
       margin-top: 15px;
       margin-bottom: 5px;
   }

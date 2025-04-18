@@ -59,6 +59,11 @@
         text-align: center;
     }
 
+    .medical-page h1 {
+        font-size: 40px;
+    }
+    
+
     .medical-card img {
         width: 350px;
         border-radius: 30px;
