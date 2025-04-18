@@ -97,6 +97,24 @@
     object-fit: cover;
 }
 
+.mobile {
+    display: block;
+  }
+.desktop {
+    display: none;
+  }
+
+  /* แสดงเฉพาะเดสก์ท็อป */
+@media (min-width: 769px) {
+  .mobile {
+      display: none;
+    }
+  .desktop {
+      display: block;
+    }
+  
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hair-restoration-content {
@@ -109,7 +127,7 @@
     }
 
     .text-block h1 {
-        font-size: 35px;
+        font-size: 32px;
         margin-bottom: 40px;
         margin-top: 30px;
         text-align: center;
@@ -125,6 +143,7 @@
 
     .text-block p {
         width: 340px;
+        margin: 20px 0 0px 0;
     }
 
     .text-block {
@@ -136,7 +155,9 @@
     }
 
     .image-block img {
-        height: auto;
+        height: 170px;
+        width: 340px;
+        object-position: center 104%;
     }
     .review-item img {
         width: 150px;
@@ -148,6 +169,9 @@
         gap: 25px;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .mobile-break {
+        display: inline;
     }
     
 }

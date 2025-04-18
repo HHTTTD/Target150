@@ -81,7 +81,7 @@
   
   .card {
     background: #fff;
-    border-radius: 0 6px 16px 16px;
+    border-radius: 0 20px 20px 20px;
     padding: 30px;
     flex: 1;
     min-width: 300px;
@@ -120,7 +120,25 @@
     font-weight: bold;
     text-decoration: underline;
   }
-  
+
+ /* Default: มือถือ */
+.image.mobile {
+  display: block;
+}
+.image.desktop {
+  display: none;
+}
+
+/* สำหรับเดสก์ท็อป */
+@media (min-width: 769px) {
+  .image.mobile {
+    display: none;
+  }
+  .image.desktop {
+    display: block;
+  }
+}
+
   /* Responsive */
   @media (max-width: 768px) {
     .collection-grid,
@@ -132,20 +150,32 @@
       text-align: center;
     }
 
+    .text .subheading {
+      margin-top: 15px;
+      margin-bottom: 5px;
+  }
+
     .text .title {
       font-size: 32px;
       text-align: center;
     }
 
+    .image {
+      margin: 0 auto;
+      display: block;
+  }
+
     .image img {
       width: 370px;
       height: 550px;
-      margin: 20px auto;
+      margin: 25px auto 0px auto;
       object-fit: cover;
       object-position: center;
       border-radius: 12px;
       border: 1px solid #ccc;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
+
+  
   }
   
