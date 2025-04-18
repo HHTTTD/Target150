@@ -41,7 +41,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 30px 300px;
+    margin: 30px 190px;
     justify-content: center;
   }
   .tabs .tab {
@@ -73,6 +73,14 @@
     gap: 40px;
     max-width: 900px;
     width: 100%;
+  }
+
+  .research-hero-content p {
+    max-width: 365px;
+  }
+
+  .research-hero-content h1 {
+    font-size: 35px;
   }
   
   .card-group {
@@ -211,6 +219,10 @@
         margin: 0 25px ;
         
       }
+
+      .card-group {
+        max-width: 400px;
+    }
 
       .card-group.highlight .card-content {
         border: 2px solid #027F00;

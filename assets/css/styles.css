@@ -1681,14 +1681,14 @@ html {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    gap: 16px;
+    gap: 3px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
 
   .research-left,
   .small-card {
-    min-width: 280px;
+    min-width: 335px;
     flex-shrink: 0;
     scroll-snap-align: start;
     padding: 16px;
@@ -1701,8 +1701,8 @@ html {
 
   .research-left img,
   .small-card img {
-    width: 250px;
-    height: 250px;
+    width: 330px;
+    height: 330px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -1710,7 +1710,7 @@ html {
 
   .research-left h3,
   .small-card h4 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #000;
     margin: 8px 0 4px;
@@ -1720,8 +1720,8 @@ html {
 
   .research-left strong,
   .small-card strong {
-    font-size: 11px;
-    color: #000000;
+    font-size: 14px;
+    color: #555;
     margin-bottom: 4px;
     display: block;
     align-self: flex-start;
@@ -1729,7 +1729,7 @@ html {
 
   .research-left p,
   .small-card p {
-    font-size: 12px;
+    font-size: 14px;
     color: #555;
     line-height: 1.4;
     overflow: hidden;
