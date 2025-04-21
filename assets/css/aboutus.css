@@ -470,10 +470,7 @@
   }
 
   .mission-line {
-    width: 400px;
-    height: 1px;
-    background-color: #fff;
-    margin: 0 auto 30px;
+    width: 250px;
   }
 
   .choose-cards {
@@ -511,6 +508,16 @@
   .choose-card:last-child {
     margin-right: 20px;
   }
+
+  .our-mission {
+    padding: 80px 50px;
+  }
+
+  .our-mission h2 {
+    font-size: 25px;
+  }
+
+
 }
 
 
