@@ -1042,6 +1042,7 @@ html {
 
 .footer-logo img {
     width: 300px;
+    height: 100px;
     margin-bottom: 10px;
     margin-top: -20px;
     margin-left: -25px;
@@ -1490,6 +1491,7 @@ html {
 
   .footer-logo img {
     width: 350px;
+    height: 100px;
     margin: 0 auto 10px;
   }
 
