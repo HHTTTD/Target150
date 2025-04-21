@@ -246,7 +246,6 @@ html {
 
 .hero-about-text h1 span {
   font-size: 67px;
-  font-weight: 600px;
   color: #027F00;
   -webkit-text-stroke: 0px #027F00
 }
@@ -318,6 +317,10 @@ html {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero-about {
+    background-color: #edefea;
+    padding: 60px 20px;
+  }
   .hero-about-container {
     flex-direction: column;
     text-align: center;
@@ -346,18 +349,19 @@ html {
   }
 
   .hero-about-text h1 {
-   font-size: 32px;         /* เพิ่มขนาดตัวอักษร */
+   font-size: 28px;         
    font-weight: bold;
-   display: flex;           /* วางไว้ในบรรทัดเดียว */
+   display: flex;           
    flex-wrap: nowrap;
    justify-content: center;
    align-items: center;
-   gap: 6px;                /* ช่องว่างระหว่างคำ */
+   gap: 6px;                
    margin-bottom: 15px;
+   -webkit-text-stroke: 1px #000;
   }
 
   .hero-about-text h1 span {
-    font-size: 32px;
+    font-size: 28px;
     color: #027F00;
   }
 
