@@ -1,5 +1,5 @@
 .hormone-section {
-    padding: 10px 20px;
+    padding: 60px 20px;
     font-family: 'Arial', sans-serif;
 }
 
@@ -97,7 +97,6 @@
     .page-title {
         font-size: 32px;
         text-align: center;
-        margin-top: 25px;
     }
 
     .image img {
