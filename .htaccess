@@ -1,0 +1,8 @@
+# เปิดใช้งาน mod_rewrite
+RewriteEngine On
+
+# ตรวจสอบว่ามีไฟล์ .html อยู่
+RewriteCond %{REQUEST_FILENAME}.html -f
+
+# ถ้ามีไฟล์ .html ตรงกับ URL ให้ rewrite ไปที่ไฟล์นั้น
+RewriteRule ^([^/]+)/?$ $1.html [L]
