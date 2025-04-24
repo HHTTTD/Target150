@@ -1,8 +1,5 @@
 RewriteEngine On
 
-# ถ้า URL ตรงกับไฟล์จริงหรือโฟลเดอร์จริง → ใช้งานตามปกติ
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-
-# ถ้าไม่เจอไฟล์หรือโฟลเดอร์จริง → ลองหา .html แทน
-RewriteRule ^([^/]+)/?$ $1.html [L]
+RewriteRule ^([^/]+)/?$ /pages/$1.html [L]
