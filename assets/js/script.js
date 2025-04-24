@@ -1,8 +1,8 @@
 // ✅ โหลด header และ footer
 async function loadComponents() {
   const [headerRes, footerRes] = await Promise.all([
-    fetch('../components/header.html'),
-    fetch('../components/footer.html')
+    fetch('/components/header.html'),
+    fetch('/components/footer.html')
   ]);
 
   const headerHTML = await headerRes.text();
