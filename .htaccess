@@ -1,10 +1,8 @@
-# เปิดใช้งาน URL rewriting
 RewriteEngine On
 
-# ให้ URL ที่ไม่มี .html ใช้ได้ เช่น /about => about.html
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^/]+)/?$ $1.html [L]
+# ถ้า URL ตรงกับไฟล์จริงหรือโฟลเดอร์จริง → ใช้งานตามปกติ
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 
-# ถ้ามีคนเข้าผ่าน .html ให้ redirect ไป URL แบบไม่ใส่ .html
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
-RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
+# ถ้าไม่เจอไฟล์หรือโฟลเดอร์จริง → ลองหา .html แทน
+RewriteRule ^([^/]+)/?$ $1.html [L]
