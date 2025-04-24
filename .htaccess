@@ -1,22 +1,22 @@
 RewriteEngine On
 
-# ✅ ข้ามไฟล์หรือโฟลเดอร์ที่มีอยู่จริง
+# ✅ ไม่แตะไฟล์/โฟลเดอร์ที่มีอยู่จริง
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# ✅ หาก URL ว่าง (/) → โหลด /index.html
+# ✅ หาก URL ว่าง (/) → ไปที่ index.html
 RewriteRule ^$ /index.html [L]
 
-# ✅ หาก URL ไม่มี .html → หาใน /pages/*.html
+# ✅ หาก URL เช่น /aboutus → ให้โหลด /pages/aboutus.html
 RewriteCond %{DOCUMENT_ROOT}/pages/$1.html -f
 RewriteRule ^([^/]+)/?$ /pages/$1.html [L]
 
-# ✅ ป้องกันไม่ให้เข้าถึงไฟล์ลับ
+# ✅ ป้องกัน dotfiles
 <FilesMatch "^(\.htaccess|\.env|\.git|composer\.json|package\.json)">
   Order allow,deny
   Deny from all
 </FilesMatch>
 
-# ✅ ตั้งค่าหน้า 404
+# ✅ หน้า 404 ถ้าไม่พบหน้า
 ErrorDocument 404 /pages/404.html
