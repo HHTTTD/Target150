@@ -1,1 +1,19 @@
-Test
+RewriteEngine On
+
+# ✅ ไม่แตะไฟล์หรือโฟลเดอร์ที่มีอยู่จริง
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# ✅ หาก URL ไม่มี .html → หาใน /pages/*.html แทน
+RewriteCond %{DOCUMENT_ROOT}/pages/$1.html -f
+RewriteRule ^([^/]+)/?$ /pages/$1.html [L]
+
+# ✅ ป้องกันการเข้าถึงไฟล์ config หรือ dotfiles
+<FilesMatch "^(\.htaccess|\.env|\.git|composer\)">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# ✅ (แนะนำ) หน้า 404 ถ้าไม่เจอหน้า
+ErrorDocument 404 /pages/404.html
