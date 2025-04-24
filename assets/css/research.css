@@ -52,6 +52,7 @@
     cursor: pointer;
     font-size: 13px;
     transition: all 0.3s;
+    user-select: none;
   }
   .tabs .tab.active {
     background: #027F00;

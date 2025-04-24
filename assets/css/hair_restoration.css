@@ -1,5 +1,5 @@
 .hair-restoration-page {
-    padding: 80px 60px 40px 100px;
+    padding: 80px 60px 40px 60px;
     font-family: 'Arial', sans-serif;
     background: #fff;
 }
@@ -67,9 +67,8 @@
 }
 
 .customer-reviews {
-    max-width: 1200px;
     margin: 80px auto;
-    padding: 0 20px;
+    padding: 0 100px;
     text-align: center;
 }
 
@@ -79,7 +78,7 @@
     font-weight: bolder;
     -webkit-text-stroke: 1px #027F00;
     margin-bottom: 30px;
-    margin-left: 0px;
+    margin-left: 50px;
     text-align: justify;
 }
 
@@ -101,6 +100,10 @@
     display: block;
   }
 .desktop {
+    display: none;
+  }
+
+  .mobile-break {
     display: none;
   }
 
