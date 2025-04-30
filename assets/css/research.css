@@ -204,9 +204,10 @@
   }
   
   /* ------------------------- Responsive ------------------------- */
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     .research-cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
     }
       .card-content {
         background: #fff;
@@ -233,12 +234,12 @@
 
     .conclusion-wrapper {
       margin-top: 10px;
-      padding-left: 10px;
+      padding-left: 25px;
     }
     .conclusion-text {
       font-size: 14px;
       line-height: 1.5;
-      width: 400px;
+      width: 350px;
     }
     .conclusion-text span {
       color: #027F00;
@@ -260,6 +261,21 @@
       margin-bottom: 70px;
     }
     
+    }
+
+    @media (max-width: 768px){
+      .research-cards {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .conclusion-text {
+        width: 400px;
+      }
+
+      .conclusion-wrapper {
+        padding-left: 10px;
+      }
     }
   
   
