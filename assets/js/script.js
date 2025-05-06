@@ -123,62 +123,20 @@ async function loadContactWidget() {
 loadContactWidget();
 
 // ✅ Contact widget logic
-/*
+
 function setupChatWidget() {
   const toggleBtn = document.getElementById('chat-toggle');
-  const popup = document.getElementById('chat-popup');
   const chatIcon = document.getElementById('chat-icon-img');
-  const arrowIcon = document.getElementById('arrow-icon');
-  const sendBtn = document.getElementById('send-chat');
-  const messageInput = document.getElementById('chat-message');
 
-  if (!toggleBtn || !popup || !chatIcon || !arrowIcon || !sendBtn || !messageInput) return;
+  if (!toggleBtn || !chatIcon) return;
 
-  let isOpen = false;
-
-  toggleBtn.addEventListener('click', () => {
-    isOpen = !isOpen;
-    popup.style.display = isOpen ? 'flex' : 'none';
-
-    if (isOpen) {
-      // แสดงลูกศร ซ่อน chat icon
-      chatIcon.classList.add('hidden');
-      arrowIcon.classList.remove('hidden');
-    } else {
-      // แสดง chat icon พร้อมหมุน
-      arrowIcon.classList.add('hidden');
-      chatIcon.classList.remove('hidden');
-      chatIcon.classList.add('rotate');
-
-      // ล้างเอฟเฟกต์หมุนหลังจบ animation
-      setTimeout(() => {
-        chatIcon.classList.remove('rotate');
-      }, 400);
-    }
-  });
-
-  sendBtn.addEventListener('click', () => {
-    const message = encodeURIComponent(messageInput.value.trim());
-    if (message) {
-      const phoneNumber = '66853772222';
-      const url = `https://wa.me/${phoneNumber}?text=${message}`;
-      window.open(url, '_blank');
-      messageInput.value = '';
-      popup.style.display = 'none';
-
-      // รีเซ็ตเป็นไอคอนแชท
-      arrowIcon.classList.add('hidden');
-      chatIcon.classList.remove('hidden');
-      isOpen = false;
-    } else {
-      alert("Please fill in the message before sending.");
-    }
-  });
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      window.open(whatsappURL, '_blank');
+    });
+  }
 }
 
-document.addEventListener('DOMContentLoaded', setupChatWidget);
-
-*/
 
 // ✅ ปุ่ม About Us ในมือถือ
 document.addEventListener('click', function (e) {
