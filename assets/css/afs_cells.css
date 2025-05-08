@@ -457,6 +457,10 @@
     font-size: 30px;
   }
 
+  .clinical-container {
+    padding: 0 0px;
+ }
+
   .clinical-card img {
     height: 400px;
     width: 280px;

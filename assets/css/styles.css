@@ -1647,7 +1647,7 @@ html {
     flex: 0 0 85%;
     scroll-snap-align: start;
     border-radius: 12px;
-    padding: 10px;
+    padding: 16px;
   }
 
   .image-box {
@@ -1697,7 +1697,7 @@ html {
 
   .research-left,
   .small-card {
-    min-width: 335px;
+    min-width: 370px;
     flex-shrink: 0;
     scroll-snap-align: start;
     padding: 16px;
