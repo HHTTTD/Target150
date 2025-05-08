@@ -150,6 +150,11 @@
   
   /* Responsive */
   @media (max-width: 768px) {
+
+    .gray-bg {
+      padding: 0px 0;
+    }
+    
     .content-row {
       flex-direction: column;
       align-items: center;
